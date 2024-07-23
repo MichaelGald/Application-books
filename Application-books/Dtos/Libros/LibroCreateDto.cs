@@ -18,9 +18,6 @@ namespace Application_books.Dtos.Libros
         [MinLength(4, ErrorMessage = "El {0} debe tener al menos {1} caracteres.")]
         public string Genero { get; set; }
 
-        [Display(Name = "Fecha de Creación")]
-        public DateTime FechaCreacion { get; set; }
-
         [Display(Name = "URL del PDF")]
         [Url(ErrorMessage = "La URL del PDF no es valida.")]
         public string UrlPdf { get; set; }

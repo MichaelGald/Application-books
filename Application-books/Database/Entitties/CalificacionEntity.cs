@@ -5,6 +5,7 @@ namespace Application_books.Database.Entitties
 {
     public class CalificacionEntity 
     {
+        [Key]
         [Column("id_calificacion")]
         public Guid IdCalificacion { get; set; }
 
@@ -18,9 +19,9 @@ namespace Application_books.Database.Entitties
         [ForeignKey(nameof(IdUsuario))]
         public virtual UsuarioEntity Usuario { get; set; }
 
-        [StringLength(5)]
+        [Range(1, 5)]
         [Column("calificacion")]
-        public string Calificacion { get; set; }
+        public int Calificacion { get; set; }
 
         [StringLength(200)]
         [Column("comentario")]

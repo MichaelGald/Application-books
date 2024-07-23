@@ -4599,19 +4599,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jomaa\\.nuget\\packages\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Application-books.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Application-books.csproj",
       "projectName": "Application-books",
-      "projectPath": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Application-books.csproj",
-      "packagesPath": "C:\\Users\\jomaa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Application-books.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jomaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
