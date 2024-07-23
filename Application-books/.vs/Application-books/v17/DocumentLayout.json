@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\entitties\\listafavoritoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\entitties\\listafavoritoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -46,11 +50,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "LibrosServices.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Services\\LibrosServices.cs",
+              "RelativeDocumentMoniker": "Services\\LibrosServices.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Services\\LibrosServices.cs",
+              "RelativeToolTip": "Services\\LibrosServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T06:24:13.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CalificacionEntity.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\CalificacionEntity.cs",
               "RelativeDocumentMoniker": "Database\\Entitties\\CalificacionEntity.cs",
@@ -58,12 +75,11 @@
               "RelativeToolTip": "Database\\Entitties\\CalificacionEntity.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAxwBYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:30:24.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T05:30:24.286Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LibroEntity.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\LibroEntity.cs",
               "RelativeDocumentMoniker": "Database\\Entitties\\LibroEntity.cs",
@@ -71,25 +87,24 @@
               "RelativeToolTip": "Database\\Entitties\\LibroEntity.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:26:10.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T05:26:10.69Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ListaFavoritoEntity.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\ListaFavoritoEntity.cs",
               "RelativeDocumentMoniker": "Database\\Entitties\\ListaFavoritoEntity.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\ListaFavoritoEntity.cs",
               "RelativeToolTip": "Database\\Entitties\\ListaFavoritoEntity.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBEAAAAcAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T05:30:55.707Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MembresiaEntity.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\MembresiaEntity.cs",
               "RelativeDocumentMoniker": "Database\\Entitties\\MembresiaEntity.cs",
@@ -97,12 +112,11 @@
               "RelativeToolTip": "Database\\Entitties\\MembresiaEntity.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:30:46.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T05:30:46.673Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AutorEntity.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\AutorEntity.cs",
               "RelativeDocumentMoniker": "Database\\Entitties\\AutorEntity.cs",
@@ -110,12 +124,11 @@
               "RelativeToolTip": "Database\\Entitties\\AutorEntity.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:30:21.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T05:30:21.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UsuarioEntity.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\UsuarioEntity.cs",
               "RelativeDocumentMoniker": "Database\\Entitties\\UsuarioEntity.cs",
@@ -123,12 +136,11 @@
               "RelativeToolTip": "Database\\Entitties\\UsuarioEntity.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:30:48.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T05:30:48.467Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "LibroCreateDto.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroCreateDto.cs",
               "RelativeDocumentMoniker": "Dtos\\Libros\\LibroCreateDto.cs",
@@ -136,12 +148,11 @@
               "RelativeToolTip": "Dtos\\Libros\\LibroCreateDto.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwBIAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:20:50.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T05:20:50.967Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "LibroDto.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroDto.cs",
               "RelativeDocumentMoniker": "Dtos\\Libros\\LibroDto.cs",
@@ -149,12 +160,11 @@
               "RelativeToolTip": "Dtos\\Libros\\LibroDto.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:18:46.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T05:18:46.952Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "LibroEditDto.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroEditDto.cs",
               "RelativeDocumentMoniker": "Dtos\\Libros\\LibroEditDto.cs",
@@ -162,8 +172,7 @@
               "RelativeToolTip": "Dtos\\Libros\\LibroEditDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:21:07.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T05:21:07.576Z"
             }
           ]
         }
