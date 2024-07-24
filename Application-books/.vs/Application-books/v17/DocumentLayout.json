@@ -3,14 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\dtos\\common\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:dtos\\common\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> rama-libro-crud
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\dtos\\libros\\librodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:dtos\\libros\\librodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\dtos\\libros\\librocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:dtos\\libros\\librocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -41,6 +47,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\entitties\\usuarioentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\entitties\\usuarioentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\entitties\\autorentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\entitties\\autorentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> rama-libro-crud
     }
   ],
   "DocumentGroupContainers": [
@@ -55,6 +65,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "ResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Common\\ResponseDto.cs",
               "RelativeDocumentMoniker": "Dtos\\Common\\ResponseDto.cs",
@@ -63,11 +74,22 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-24T04:08:33.394Z",
+=======
+              "Title": "LibrosServices.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Services\\LibrosServices.cs",
+              "RelativeDocumentMoniker": "Services\\LibrosServices.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Services\\LibrosServices.cs",
+              "RelativeToolTip": "Services\\LibrosServices.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T06:24:13.523Z",
+>>>>>>> rama-libro-crud
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< HEAD
               "Title": "LibroCreateDto.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroCreateDto.cs",
               "RelativeDocumentMoniker": "Dtos\\Libros\\LibroCreateDto.cs",
@@ -76,6 +98,16 @@
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T05:20:50.967Z"
+=======
+              "Title": "AutorEntity.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\AutorEntity.cs",
+              "RelativeDocumentMoniker": "Database\\Entitties\\AutorEntity.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\AutorEntity.cs",
+              "RelativeToolTip": "Database\\Entitties\\AutorEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T05:12:17.694Z"
+>>>>>>> rama-libro-crud
             },
             {
               "$type": "Document",
@@ -85,6 +117,7 @@
               "RelativeDocumentMoniker": "Dtos\\Libros\\LibroDto.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroDto.cs",
               "RelativeToolTip": "Dtos\\Libros\\LibroDto.cs",
+<<<<<<< HEAD
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T05:18:46.952Z",
@@ -173,6 +206,11 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T05:30:48.467Z"
+=======
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwA0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T04:30:46.081Z"
+>>>>>>> rama-libro-crud
             }
           ]
         }
