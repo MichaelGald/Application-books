@@ -1,10 +1,5 @@
 ﻿using Newtonsoft.Json;
-
-<<<<<<< HEAD
-namespace BlogUNAHApi.Dtos.Common
-=======
 namespace Application_books.Dtos.Common
->>>>>>> rama-libro-crud
 {
     public class ResponseDto<T>
     {

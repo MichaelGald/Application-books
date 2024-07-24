@@ -3,54 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\",
   "Documents": [
     {
-<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\dtos\\common\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:dtos\\common\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> rama-libro-crud
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\dtos\\libros\\librodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:dtos\\libros\\librodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\dtos\\libros\\librocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:dtos\\libros\\librocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\dtos\\libros\\libroeditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:dtos\\libros\\libroeditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\entitties\\listafavoritoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\entitties\\listafavoritoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\dtos\\libros\\librocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:dtos\\libros\\librocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\entitties\\autorentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\entitties\\autorentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\entitties\\libroentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\entitties\\libroentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\entitties\\calificacionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\entitties\\calificacionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\entitties\\usuarioentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\entitties\\usuarioentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\entitties\\membresiaentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\entitties\\membresiaentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\entitties\\usuarioentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\entitties\\usuarioentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\entitties\\listafavoritoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\entitties\\listafavoritoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\entitties\\calificacionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\entitties\\calificacionentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\entitties\\autorentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\entitties\\autorentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> rama-libro-crud
     }
   ],
   "DocumentGroupContainers": [
@@ -60,54 +54,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-<<<<<<< HEAD
-              "Title": "ResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Common\\ResponseDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\Common\\ResponseDto.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Common\\ResponseDto.cs",
-              "RelativeToolTip": "Dtos\\Common\\ResponseDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T04:08:33.394Z",
-=======
-              "Title": "LibrosServices.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Services\\LibrosServices.cs",
-              "RelativeDocumentMoniker": "Services\\LibrosServices.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Services\\LibrosServices.cs",
-              "RelativeToolTip": "Services\\LibrosServices.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "WhenOpened": "2024-07-24T06:15:28.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LibroEditDto.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroEditDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\Libros\\LibroEditDto.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroEditDto.cs",
+              "RelativeToolTip": "Dtos\\Libros\\LibroEditDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T06:24:13.523Z",
->>>>>>> rama-libro-crud
+              "WhenOpened": "2024-07-24T06:15:25.681Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-<<<<<<< HEAD
-              "Title": "LibroCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroCreateDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\Libros\\LibroCreateDto.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroCreateDto.cs",
-              "RelativeToolTip": "Dtos\\Libros\\LibroCreateDto.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:20:50.967Z"
-=======
-              "Title": "AutorEntity.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\AutorEntity.cs",
-              "RelativeDocumentMoniker": "Database\\Entitties\\AutorEntity.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\AutorEntity.cs",
-              "RelativeToolTip": "Database\\Entitties\\AutorEntity.cs",
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T05:12:17.694Z"
->>>>>>> rama-libro-crud
+              "WhenOpened": "2024-07-24T05:47:37.118Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -117,100 +103,101 @@
               "RelativeDocumentMoniker": "Dtos\\Libros\\LibroDto.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroDto.cs",
               "RelativeToolTip": "Dtos\\Libros\\LibroDto.cs",
-<<<<<<< HEAD
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:18:46.952Z",
+              "WhenOpened": "2024-07-24T04:30:46.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MembresiaEntity.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\MembresiaEntity.cs",
-              "RelativeDocumentMoniker": "Database\\Entitties\\MembresiaEntity.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\MembresiaEntity.cs",
-              "RelativeToolTip": "Database\\Entitties\\MembresiaEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "DocumentIndex": 0,
+              "Title": "ResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Common\\ResponseDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\Common\\ResponseDto.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Common\\ResponseDto.cs",
+              "RelativeToolTip": "Dtos\\Common\\ResponseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:30:46.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LibroEditDto.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroEditDto.cs",
-              "RelativeDocumentMoniker": "Dtos\\Libros\\LibroEditDto.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroEditDto.cs",
-              "RelativeToolTip": "Dtos\\Libros\\LibroEditDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:21:07.576Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ListaFavoritoEntity.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\ListaFavoritoEntity.cs",
-              "RelativeDocumentMoniker": "Database\\Entitties\\ListaFavoritoEntity.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\ListaFavoritoEntity.cs",
-              "RelativeToolTip": "Database\\Entitties\\ListaFavoritoEntity.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:30:55.707Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LibroEntity.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\LibroEntity.cs",
-              "RelativeDocumentMoniker": "Database\\Entitties\\LibroEntity.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\LibroEntity.cs",
-              "RelativeToolTip": "Database\\Entitties\\LibroEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:26:10.69Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CalificacionEntity.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\CalificacionEntity.cs",
-              "RelativeDocumentMoniker": "Database\\Entitties\\CalificacionEntity.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\CalificacionEntity.cs",
-              "RelativeToolTip": "Database\\Entitties\\CalificacionEntity.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBYAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:30:24.286Z"
+              "WhenOpened": "2024-07-24T06:14:38.391Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AutorEntity.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\AutorEntity.cs",
-              "RelativeDocumentMoniker": "Database\\Entitties\\AutorEntity.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\AutorEntity.cs",
-              "RelativeToolTip": "Database\\Entitties\\AutorEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Title": "LibroCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroCreateDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\Libros\\LibroCreateDto.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroCreateDto.cs",
+              "RelativeToolTip": "Dtos\\Libros\\LibroCreateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:30:21.147Z"
+              "WhenOpened": "2024-07-24T06:15:21.114Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "UsuarioEntity.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\UsuarioEntity.cs",
               "RelativeDocumentMoniker": "Database\\Entitties\\UsuarioEntity.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\UsuarioEntity.cs",
               "RelativeToolTip": "Database\\Entitties\\UsuarioEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T05:30:48.467Z"
-=======
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwA0AAAAbAAAA",
+              "WhenOpened": "2024-07-24T06:15:12.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MembresiaEntity.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\MembresiaEntity.cs",
+              "RelativeDocumentMoniker": "Database\\Entitties\\MembresiaEntity.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\MembresiaEntity.cs",
+              "RelativeToolTip": "Database\\Entitties\\MembresiaEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T04:30:46.081Z"
->>>>>>> rama-libro-crud
+              "WhenOpened": "2024-07-24T06:15:11.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ListaFavoritoEntity.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\ListaFavoritoEntity.cs",
+              "RelativeDocumentMoniker": "Database\\Entitties\\ListaFavoritoEntity.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\ListaFavoritoEntity.cs",
+              "RelativeToolTip": "Database\\Entitties\\ListaFavoritoEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T06:15:10.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CalificacionEntity.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\CalificacionEntity.cs",
+              "RelativeDocumentMoniker": "Database\\Entitties\\CalificacionEntity.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\CalificacionEntity.cs",
+              "RelativeToolTip": "Database\\Entitties\\CalificacionEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T06:15:09.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AutorEntity.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\AutorEntity.cs",
+              "RelativeDocumentMoniker": "Database\\Entitties\\AutorEntity.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\AutorEntity.cs",
+              "RelativeToolTip": "Database\\Entitties\\AutorEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T05:12:17.694Z",
+              "EditorCaption": ""
             }
           ]
         }
