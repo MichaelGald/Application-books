@@ -1,4 +1,7 @@
-﻿namespace Application_books
+﻿using Application_books.Database;
+using Microsoft.EntityFrameworkCore;
+
+namespace Application_books
 {
     public class Startup
     {
@@ -16,7 +19,7 @@
             services.AddSwaggerGen();
 
             //Add Custom services
-
+            services.AddDbContext<Application_booksContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
