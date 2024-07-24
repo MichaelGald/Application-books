@@ -1,4 +1,4 @@
-﻿using System.Text.Json.Serialization;
+﻿using Newtonsoft.Json;
 
 namespace Application_books.Dtos.Common
 {
@@ -11,6 +11,6 @@ namespace Application_books.Dtos.Common
         [JsonIgnore]
         public int StatusCode { get; set; }
 
-        public bool Status { get; set; }
+        public bool Status {  get; set; }
     }
 }
