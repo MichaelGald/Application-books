@@ -21,6 +21,7 @@ namespace Application_books.Services
         }  
         public async Task<ResponseDto<List<LibroDto>>> GetLibroListAsync()
         {
+            //TODO: Agregar include autor para que no aparezca null
             var librosEntity = await _booksContext.Libros.ToListAsync();
             var libroDtos = _mapper.Map<List<LibroDto>>(librosEntity);
 
@@ -34,6 +35,7 @@ namespace Application_books.Services
         }
         public async Task<ResponseDto<LibroDto>> GetLibroByAsync(Guid id)
         {
+            //TODO: Agregar include autor para que no aparezca null
             var librosEntity = await _booksContext.Libros.FirstOrDefaultAsync(c => c.IdLibro == id);
             if (librosEntity == null)
             {
@@ -66,62 +68,50 @@ namespace Application_books.Services
                 StatusCode = 201,
                 Status = true,
                 Message = "Reegistro creado coreectamente.",
+                Data = libroDto,
             };
         }
         public async Task<ResponseDto<LibroDto>> EditAsync(LibroEditDto dto, Guid id)
         {
-            var libroDto = await ReadLibroFormFileAsync();
-            var existingLibro = libroDto.FirstOrDefault(libro => libro.IdLibro == id);
-            if (existingLibro is null) 
+            var libroEntity = await _booksContext.Libros.FirstOrDefaultAsync(e => e.IdLibro == id);
+            if (libroEntity is null) 
             {
                 return new ResponseDto<LibroDto>
                 {
                     StatusCode = 404,
                     Status = false,
-                    Message = $"El registro {id} no fue encontrado"
+                    Message = $"El registro registro"
                 };
             }
+            _mapper.Map<LibroEditDto, LibroEntity>(dto, libroEntity);
+            _booksContext.Libros.Update(libroEntity);
+            await _booksContext.SaveChangesAsync();
 
-            _mapper.Map(dto, existingLibro);
-
-            await WriteLibrosToFileAsync(libroDto);
-
+            var libroDto = _mapper.Map<LibroDto>(libroEntity);
             return new ResponseDto<LibroDto>
-                {
+             {
                     StatusCode = 200,
                     Status = true,
-                    Message = "Registro editado correctamente."
-                };
-            
-        }
+                    Message = "Registro editado correctamente.",
+                    Data = libroDto
+             };
+         }
+
         public async Task<ResponseDto<LibroDto>> DeleteAsync(Guid id)
         {
-            var librosDto = await ReadLibroFormFileAsync();
-            var librosToDelete = librosDto.FirstOrDefault(x => x.IdLibro == id);
-            if (librosToDelete is null)
+            var librosEntity = await _booksContext.Libros.FirstOrDefaultAsync(x => x.IdLibro == id);
+            if (librosEntity == null)
             {
                 return new ResponseDto<LibroDto>
                 {
                     StatusCode = 404,
                     Status = false,
-                    Message = $"El registro {id} no fue encontrado"
+                    Message = $"No se encontro el registro"
                 };
             }
 
-            librosDto.Remove(librosToDelete);
-            var libros = librosDto.Select(x => new LibroEntity
-            {
-               IdLibro = x.Idlibro,
-               Titulo = x.Titulo,
-               Descripcion = x.Descripcion,
-               Genero = x.Genero,
-               FechaCreacion = x.FechaCreacion,
-               UrlPdf = x.UrlPdf,
-               IdAutor = x.IdAutor,
-
-            }).ToList();
-
-            await WriteLibrosToFileAsync(libros);
+            _booksContext.Libros.Remove(librosEntity);
+            await _booksContext.SaveChangesAsync();
             return new ResponseDto<LibroDto>
             {
                 StatusCode = 200,
@@ -129,5 +119,5 @@ namespace Application_books.Services
                 Message = "Registro borrado correctamente"
             };
         }
-  }
+    }
 }
