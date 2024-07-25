@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\entitties\\libroentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\entitties\\libroentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\helpers\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,20 +82,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AutoMapperProfile.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Helpers\\AutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "Helpers\\AutoMapperProfile.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Helpers\\AutoMapperProfile.cs",
-              "RelativeToolTip": "Helpers\\AutoMapperProfile.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T01:01:50.149Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 7,
@@ -122,20 +110,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LibroController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Controllers\\LibroController.cs",
               "RelativeDocumentMoniker": "Controllers\\LibroController.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Controllers\\LibroController.cs",
               "RelativeToolTip": "Controllers\\LibroController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-24T23:58:04.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Startup.cs",
               "RelativeDocumentMoniker": "Startup.cs",
@@ -143,8 +131,7 @@
               "RelativeToolTip": "Startup.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAA5wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T05:47:37.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-24T05:47:37.118Z"
             },
             {
               "$type": "Document",
@@ -171,7 +158,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "LibrosServices.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Services\\LibrosServices.cs",
+              "RelativeDocumentMoniker": "Services\\LibrosServices.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Services\\LibrosServices.cs",
+              "RelativeToolTip": "Services\\LibrosServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T04:20:49.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Helpers\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "Helpers\\AutoMapperProfile.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Helpers\\AutoMapperProfile.cs",
+              "RelativeToolTip": "Helpers\\AutoMapperProfile.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T01:01:50.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "LibroEntity.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\LibroEntity.cs",
               "RelativeDocumentMoniker": "Database\\Entitties\\LibroEntity.cs",
@@ -179,8 +191,7 @@
               "RelativeToolTip": "Database\\Entitties\\LibroEntity.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAAACoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T04:25:07.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-25T04:25:07.761Z"
             },
             {
               "$type": "Document",
@@ -193,19 +204,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-24T07:12:46.183Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LibrosServices.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Services\\LibrosServices.cs",
-              "RelativeDocumentMoniker": "Services\\LibrosServices.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Services\\LibrosServices.cs",
-              "RelativeToolTip": "Services\\LibrosServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T04:20:49.602Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
