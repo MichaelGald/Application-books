@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,6 +26,30 @@
     {
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\database\\application_bookscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\application_bookscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\jomaa\\onedrive\\documentos\\clases 2pac 2024\\1800 poo\\proyecto poo\\proyecto\\application-books\\application-books\\services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\jomaa\\onedrive\\documentos\\clases 2pac 2024\\1800 poo\\proyecto poo\\proyecto\\application-books\\application-books\\database\\applicationbooksseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\applicationbooksseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\jomaa\\onedrive\\documentos\\clases 2pac 2024\\1800 poo\\proyecto poo\\proyecto\\application-books\\application-books\\database\\applicationbookscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\applicationbookscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\jomaa\\onedrive\\documentos\\clases 2pac 2024\\1800 poo\\proyecto poo\\proyecto\\application-books\\application-books\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\jomaa\\onedrive\\documentos\\clases 2pac 2024\\1800 poo\\proyecto poo\\proyecto\\application-books\\application-books\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\jomaa\\onedrive\\documentos\\clases 2pac 2024\\1800 poo\\proyecto poo\\proyecto\\application-books\\application-books\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+>>>>>>> rama-automapper
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\pc\\desktop\\application-books\\application-books\\dtos\\libros\\librocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,6 +107,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 6,
           "Children": [
             {
@@ -93,6 +119,84 @@
               "ToolTip": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Dtos\\Libros\\LibroDto.cs",
               "RelativeToolTip": "Dtos\\Libros\\LibroDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+=======
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationbooksContext.cs",
+              "DocumentMoniker": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Database\\ApplicationbooksContext.cs",
+              "RelativeDocumentMoniker": "Database\\ApplicationbooksContext.cs",
+              "ToolTip": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Database\\ApplicationbooksContext.cs",
+              "RelativeToolTip": "Database\\ApplicationbooksContext.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBEAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:38:43.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationBooksSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Database\\ApplicationBooksSeeder.cs",
+              "RelativeDocumentMoniker": "Database\\ApplicationBooksSeeder.cs",
+              "ToolTip": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Database\\ApplicationBooksSeeder.cs",
+              "RelativeToolTip": "Database\\ApplicationBooksSeeder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:45:36.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LibrosServices.cs",
+              "DocumentMoniker": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Services\\LibrosServices.cs",
+              "RelativeDocumentMoniker": "Services\\LibrosServices.cs",
+              "ToolTip": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Services\\LibrosServices.cs",
+              "RelativeToolTip": "Services\\LibrosServices.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAmwAwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:32:29.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-25T06:05:12.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-25T06:02:09.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAuwBYAAAAxAAAA",
+>>>>>>> rama-automapper
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-24T04:30:46.081Z"
             },
@@ -110,6 +214,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "LibroController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Controllers\\LibroController.cs",
@@ -292,6 +397,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 17,
+=======
+              "DocumentIndex": 6,
+>>>>>>> rama-automapper
               "Title": "AutorEntity.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Application-books\\Application-books\\Database\\Entitties\\AutorEntity.cs",
               "RelativeDocumentMoniker": "Database\\Entitties\\AutorEntity.cs",

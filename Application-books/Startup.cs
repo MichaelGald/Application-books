@@ -1,4 +1,5 @@
 ﻿using Application_books.Database;
+using Application_books.Helpers;
 using Microsoft.EntityFrameworkCore;
 
 namespace Application_books
@@ -19,7 +20,10 @@ namespace Application_books
             services.AddSwaggerGen();
 
             //Add Custom services
-            services.AddDbContext<Application_booksContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<ApplicationbooksContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            // Configurar AutoMapper
+            services.AddAutoMapper(typeof(AutoMapperProfile));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

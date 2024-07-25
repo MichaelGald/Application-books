@@ -11,17 +11,27 @@ namespace Application_books.Services
 {
     public class LibrosServices : ILibrosServices
     {
+<<<<<<< HEAD
         private readonly Application_booksContext _booksContext;
         private readonly IMapper _mapper;
 
         public LibrosServices(Application_booksContext booksContext, IMapper mapper)
+=======
+        private readonly ApplicationbooksContext _booksContext;
+        private readonly IMapper _mapper;
+
+        public LibrosServices(ApplicationbooksContext booksContext, IMapper mapper)
+>>>>>>> rama-automapper
         {
             this._booksContext = booksContext;
             this._mapper = mapper;
         }  
         public async Task<ResponseDto<List<LibroDto>>> GetLibroListAsync()
         {
+<<<<<<< HEAD
             //TODO: Agregar include autor para que no aparezca null
+=======
+>>>>>>> rama-automapper
             var librosEntity = await _booksContext.Libros.ToListAsync();
             var libroDtos = _mapper.Map<List<LibroDto>>(librosEntity);
 
@@ -35,7 +45,10 @@ namespace Application_books.Services
         }
         public async Task<ResponseDto<LibroDto>> GetLibroByAsync(Guid id)
         {
+<<<<<<< HEAD
             //TODO: Agregar include autor para que no aparezca null
+=======
+>>>>>>> rama-automapper
             var librosEntity = await _booksContext.Libros.FirstOrDefaultAsync(c => c.IdLibro == id);
             if (librosEntity == null)
             {
@@ -73,8 +86,14 @@ namespace Application_books.Services
         }
         public async Task<ResponseDto<LibroDto>> EditAsync(LibroEditDto dto, Guid id)
         {
+<<<<<<< HEAD
             var libroEntity = await _booksContext.Libros.FirstOrDefaultAsync(e => e.IdLibro == id);
             if (libroEntity is null) 
+=======
+            var libroDto = await ReadLibroFormFileAsync();
+            var existingLibro = libroDto.FirstOrDefault(libro => libro.IdLibro == id);
+            if (existingLibro is null) 
+>>>>>>> rama-automapper
             {
                 return new ResponseDto<LibroDto>
                 {
@@ -87,9 +106,18 @@ namespace Application_books.Services
             _booksContext.Libros.Update(libroEntity);
             await _booksContext.SaveChangesAsync();
 
+<<<<<<< HEAD
             var libroDto = _mapper.Map<LibroDto>(libroEntity);
             return new ResponseDto<LibroDto>
              {
+=======
+            _mapper.Map(dto, existingLibro);
+
+            await WriteLibrosToFileAsync(libroDto);
+
+            return new ResponseDto<LibroDto>
+                {
+>>>>>>> rama-automapper
                     StatusCode = 200,
                     Status = true,
                     Message = "Registro editado correctamente.",
@@ -99,8 +127,14 @@ namespace Application_books.Services
 
         public async Task<ResponseDto<LibroDto>> DeleteAsync(Guid id)
         {
+<<<<<<< HEAD
             var librosEntity = await _booksContext.Libros.FirstOrDefaultAsync(x => x.IdLibro == id);
             if (librosEntity == null)
+=======
+            var librosDto = await ReadLibroFormFileAsync();
+            var librosToDelete = librosDto.FirstOrDefault(x => x.IdLibro == id);
+            if (librosToDelete is null)
+>>>>>>> rama-automapper
             {
                 return new ResponseDto<LibroDto>
                 {
@@ -119,5 +153,9 @@ namespace Application_books.Services
                 Message = "Registro borrado correctamente"
             };
         }
+<<<<<<< HEAD
     }
+=======
+  }
+>>>>>>> rama-automapper
 }

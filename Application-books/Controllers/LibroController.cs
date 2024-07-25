@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 ﻿using Application_books.Dtos.Common;
 using Application_books.Dtos.Libros;
 using Application_books.Services.Interface;
+=======
+﻿using Application_books.Services.Interface;
+>>>>>>> rama-automapper
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +20,7 @@ namespace Application_books.Controllers
         {
             this._librosServices = librosServices;
         }
+<<<<<<< HEAD
         [HttpGet]
         public async Task<ActionResult<ResponseDto<List<LibroDto>>>> GetAll() 
         {
@@ -51,4 +56,7 @@ namespace Application_books.Controllers
             return StatusCode(response.StatusCode, response);
         }
     }  
+=======
+    }
+>>>>>>> rama-automapper
 } 
