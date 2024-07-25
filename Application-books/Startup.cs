@@ -20,7 +20,7 @@ namespace Application_books
             services.AddSwaggerGen();
 
             //Add Custom services
-            services.AddDbContext<Application_booksContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<ApplicationbooksContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             // Configurar AutoMapper
             services.AddAutoMapper(typeof(AutoMapperProfile));

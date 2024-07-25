@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Application_books.Database
 {
-    public class Application_booksContext : DbContext
+    public class ApplicationbooksContext : DbContext
     {
-            public Application_booksContext(DbContextOptions<Application_booksContext> options)
+            public ApplicationbooksContext(DbContextOptions<ApplicationbooksContext> options)
                 : base(options)
             {
             }

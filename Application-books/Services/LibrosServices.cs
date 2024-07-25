@@ -11,10 +11,10 @@ namespace Application_books.Services
 {
     public class LibrosServices : ILibrosServices
     {
-        private readonly Application_booksContext _booksContext;
+        private readonly ApplicationbooksContext _booksContext;
         private readonly IMapper _mapper;
 
-        public LibrosServices(Application_booksContext booksContext, IMapper mapper)
+        public LibrosServices(ApplicationbooksContext booksContext, IMapper mapper)
         {
             this._booksContext = booksContext;
             this._mapper = mapper;

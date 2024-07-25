@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\jomaa\\onedrive\\documentos\\clases 2pac 2024\\1800 poo\\proyecto poo\\proyecto\\application-books\\application-books\\database\\applicationbooksseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\applicationbooksseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\jomaa\\onedrive\\documentos\\clases 2pac 2024\\1800 poo\\proyecto poo\\proyecto\\application-books\\application-books\\database\\applicationbookscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:database\\applicationbookscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\jomaa\\onedrive\\documentos\\clases 2pac 2024\\1800 poo\\proyecto poo\\proyecto\\application-books\\application-books\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,8 +38,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationbooksContext.cs",
+              "DocumentMoniker": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Database\\ApplicationbooksContext.cs",
+              "RelativeDocumentMoniker": "Database\\ApplicationbooksContext.cs",
+              "ToolTip": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Database\\ApplicationbooksContext.cs",
+              "RelativeToolTip": "Database\\ApplicationbooksContext.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBEAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:38:43.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationBooksSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Database\\ApplicationBooksSeeder.cs",
+              "RelativeDocumentMoniker": "Database\\ApplicationBooksSeeder.cs",
+              "ToolTip": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Database\\ApplicationBooksSeeder.cs",
+              "RelativeToolTip": "Database\\ApplicationBooksSeeder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T06:45:36.833Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,14 +74,14 @@
               "RelativeDocumentMoniker": "Services\\LibrosServices.cs",
               "ToolTip": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Services\\LibrosServices.cs",
               "RelativeToolTip": "Services\\LibrosServices.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAAwEgAAAAqAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAmwAwAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T06:32:29.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -60,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -73,20 +107,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Startup.cs",
               "RelativeDocumentMoniker": "Startup.cs",
               "ToolTip": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Startup.cs",
               "RelativeToolTip": "Startup.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAuwBYAAAAyAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAuwBYAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-24T06:32:18.024Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AutorEntity.cs",
               "DocumentMoniker": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Database\\Entitties\\AutorEntity.cs",
               "RelativeDocumentMoniker": "Database\\Entitties\\AutorEntity.cs",
@@ -94,7 +128,8 @@
               "RelativeToolTip": "Database\\Entitties\\AutorEntity.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T05:12:17.694Z"
+              "WhenOpened": "2024-07-24T05:12:17.694Z",
+              "EditorCaption": ""
             }
           ]
         }
