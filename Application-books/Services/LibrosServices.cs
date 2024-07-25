@@ -1,70 +1,66 @@
-﻿using Application_books.Database.Entitties;
+﻿using Application_books.Database;
+using Application_books.Database.Entitties;
 using Application_books.Dtos.Common;
 using Application_books.Dtos.Libros;
 using Application_books.Services.Interface;
+using AutoMapper;
 using Newtonsoft.Json;
+using System.Data.Entity;
 
 namespace Application_books.Services
 {
     public class LibrosServices : ILibrosServices
     {
-        public readonly string _JSON_FILE;
-        public LibrosServices()
+        private readonly Application_booksContext _booksContext;
+        private readonly IMapper _mapper;
+
+        public LibrosServices(Application_booksContext booksContext, IMapper mapper)
         {
-            _JSON_FILE = "seedData/libros.json";
+            this._booksContext = booksContext;
+            this._mapper = mapper;
         }  
         public async Task<ResponseDto<List<LibroDto>>> GetLibroListAsync()
         {
+            var librosEntity = await _booksContext.Libros.ToListAsync();
+            var libroDtos = _mapper.Map<List<LibroDto>>(librosEntity);
+
             return new ResponseDto<List<LibroDto>>
             {
                 StatusCode = 200,
                 Status = true,
-                Message = "Lista de re obtenida correctamente.",
-                Data = await ReadLibroFormFileAsync()
+                Message = "Lista de libro obtenida correctamente.",
+                Data = libroDtos,
             };
         }
         public async Task<ResponseDto<LibroDto>> GetLibroByAsync(Guid id)
         {
-            var libros = await ReadLibroFormFileAsync();
-            LibroDto libro = libros.FirstOrDefault(c => c.Idlibro == id);
+            var librosEntity = await _booksContext.Libros.FirstOrDefaultAsync(c => c.IdLibro == id);
+            if (librosEntity == null)
+            {
+                return new ResponseDto<LibroDto> 
+                {
+                    StatusCode = 404,
+                    Status = false,
+                    Message = "No se encontro registro."
+                };
+            }
+            var libroDto = _mapper.Map<LibroDto>(librosEntity);
             return new ResponseDto<LibroDto>
             {
                 StatusCode = 200,
                 Status = true,
                 Message = "Registro obtenido correctamente.",
-                Data = libro
+                Data= libroDto,
             };
         }
         public async Task<ResponseDto<LibroDto>> CreateAsync(LibroCreateDto dto)
         {
-            var libroDtos = await ReadLibroFormFileAsync();
+            var libroEntity = _mapper.Map<LibroEntity>(dto);
+            _booksContext.Libros.Add(libroEntity);
+            await _booksContext.SaveChangesAsync();
 
-            var libroDto = new LibroDto
-            {
-                Idlibro = Guid.NewGuid(),
-                Titulo = dto.Titulo,
-                Descripcion = dto.Descripcion,
-                Genero = dto.Genero,
-                FechaCreacion = DateTime.Now,
-                UrlPdf = dto.UrlPdf,
-                IdAutor = dto.IdAutor,
-                Autor = dto.Autor,
-            };
+            var libroDto = _mapper.Map<LibroDto>(libroEntity);
 
-            libroDtos.Add(libroDto);
-            var libros = libroDtos.Select(x => new LibroEntity 
-            {
-                IdLibro = x.Idlibro,
-                Titulo = x.Titulo,
-                Descripcion = x.Descripcion,
-                Genero = x.Genero,
-                FechaCreacion = DateTime.Now,
-                UrlPdf = x.UrlPdf,
-                IdAutor = x.IdAutor,
-                Autor = x.Autor,
-            }).ToList();
-
-            await WriteLibrosToFileAsync(libros);
             return new ResponseDto<LibroDto> 
             {
                 StatusCode = 201,
@@ -75,7 +71,7 @@ namespace Application_books.Services
         public async Task<ResponseDto<LibroDto>> EditAsync(LibroEditDto dto, Guid id)
         {
             var libroDto = await ReadLibroFormFileAsync();
-            var existingLibro = libroDto.FirstOrDefault(libro => libro.Idlibro == id);
+            var existingLibro = libroDto.FirstOrDefault(libro => libro.IdLibro == id);
             if (existingLibro is null) 
             {
                 return new ResponseDto<LibroDto>
@@ -86,30 +82,11 @@ namespace Application_books.Services
                 };
             }
 
-            for (int i = 0; i < libroDto.Count; i++)
-            {
-                if (libroDto[i].Idlibro == id)
-                {
-                    libroDto[i].Titulo = dto.Titulo;
-                    libroDto[i].Descripcion = dto.Descripcion;
-                    libroDto[i].Genero = dto.Genero;
-                    libroDto[i].UrlPdf = dto.UrlPdf;
-                    libroDto[i].IdAutor = dto.IdAutor;
-                }
-            }
+            _mapper.Map(dto, existingLibro);
 
-                var libros = libroDto.Select(x => new LibroEntity
-                {
-                    IdLibro = x.Idlibro,
-                    Titulo = x.Titulo,
-                    Descripcion = x.Descripcion,
-                    Genero = x.Genero,
-                    UrlPdf = x.UrlPdf,
-                    IdAutor = x.IdAutor,
-                }).ToList();
+            await WriteLibrosToFileAsync(libroDto);
 
-                await WriteLibrosToFileAsync(libros);
-                return new ResponseDto<LibroDto>
+            return new ResponseDto<LibroDto>
                 {
                     StatusCode = 200,
                     Status = true,
@@ -120,7 +97,7 @@ namespace Application_books.Services
         public async Task<ResponseDto<LibroDto>> DeleteAsync(Guid id)
         {
             var librosDto = await ReadLibroFormFileAsync();
-            var librosToDelete = librosDto.FirstOrDefault(x => x.Idlibro == id);
+            var librosToDelete = librosDto.FirstOrDefault(x => x.IdLibro == id);
             if (librosToDelete is null)
             {
                 return new ResponseDto<LibroDto>
@@ -152,34 +129,5 @@ namespace Application_books.Services
                 Message = "Registro borrado correctamente"
             };
         }
-        private async Task<List<LibroDto>> ReadLibroFormFileAsync()
-        {
-            if (!File.Exists(_JSON_FILE))
-            {
-                return new List<LibroDto>();
-            }
-            var json = await File.ReadAllTextAsync(_JSON_FILE); 
-            var libros = JsonConvert.DeserializeObject<List<LibroEntity>>(json);
-            var dtos = libros.Select(x => new LibroDto
-            {
-                Idlibro = x.IdLibro,
-                Titulo = x.Titulo,
-                Descripcion = x.Descripcion,
-                Genero = x.Genero,
-                FechaCreacion = x.FechaCreacion,
-                UrlPdf = x.UrlPdf,
-                IdAutor = x.IdAutor,
-                Autor = x.Autor,
-            }).ToList();
-            return dtos;
-        }
-        private async Task WriteLibrosToFileAsync(List<LibroEntity> libros) 
-        {
-            var json = JsonConvert.SerializeObject(libros, Formatting.Indented);
-            if (File.Exists(_JSON_FILE))
-            {
-                await File.WriteAllTextAsync(_JSON_FILE, json);
-            }
-        }
-    }
+  }
 }
