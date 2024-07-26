@@ -1,0 +1,23 @@
+meta {
+  name: Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{PATH}}libros/564ea9d6-acfa-4638-a89d-08c2693d68b7
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "idlibro": "564ea9d6-acfa-4638-a89d-08c2693d68b7",
+      "titulo": "1984 | Editado",
+      "descripcion": "Una novela distópica de George Orwell sobre un régimen totalitario.",
+      "genero": "Ciencia Ficción",
+      "fechaCreacion": "2024-07-25T17:46:24.9691223",
+      "urlPdf": "https://example.com/1984.pdf",
+      "idAutor": "50cabc16-efc0-41e7-8cb9-e480c824d12d"
+    }
+}
