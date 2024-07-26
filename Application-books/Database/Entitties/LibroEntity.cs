@@ -11,17 +11,17 @@ namespace Application_books.Database.Entitties
         public Guid IdLibro {  get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(100)]
         [Column("titulo")]
         public string Titulo { get; set; }
 
         [Required]
-        [StringLength(200)]
+        [StringLength(500)]
         [Column("descripcion")]
         public string Descripcion { get; set; }
 
         [Required]
-        [StringLength(20)]
+        [StringLength(50)]
         [Column("genero")]
         public string Genero { get; set; }
 
@@ -30,7 +30,7 @@ namespace Application_books.Database.Entitties
         public DateTime FechaCreacion { get; set; } = DateTime.Now;
 
         [Required]
-        [StringLength(100)]
+        [StringLength(500)]
         [Column("pdf_libro")]
         public string UrlPdf { get; set; }
 

@@ -14,8 +14,8 @@ namespace Application_books.Database
         {
             try
             {
-                await LoadLibrosAsync(loggerFactory, context);
                 await LoadAutorAsync(loggerFactory, context);
+                await LoadLibrosAsync(loggerFactory, context);                
             }
             catch (Exception e)
             {
@@ -29,14 +29,15 @@ namespace Application_books.Database
             try
             {
                 var jsonfilePath = "SeedData/libros.json";
-                var jsonnContent = await File.ReadAllTextAsync(jsonfilePath);
-                var libros = JsonConvert.DeserializeObject<List<LibroEntity>>(jsonnContent);
+                var jsonContent = await File.ReadAllTextAsync(jsonfilePath);
+                var libros = JsonConvert.DeserializeObject<List<LibroEntity>>(jsonContent);
                 if (!await _context.Libros.AnyAsync())
                 {
                     for (int i = 0; i < libros.Count; i++)
                     {
                         libros[i].FechaCreacion = DateTime.Now;
                     }
+
                     _context.Libros.AddRange(libros);
                     await _context.SaveChangesAsync();
                 }
@@ -44,7 +45,7 @@ namespace Application_books.Database
             catch (Exception e)
             {
                 var logger = loggerFactory.CreateLogger<ApplicationbooksContext>();
-                logger.LogError(e, "Error al ejecutar el Seed de Categoria.");
+                logger.LogError(e, "Error al ejecutar el Seed de libros.");
             }
         }
         public static async Task LoadAutorAsync(ILoggerFactory loggerFactory, ApplicationbooksContext _context)
@@ -63,7 +64,7 @@ namespace Application_books.Database
             catch (Exception e)
             {
                 var logger = loggerFactory.CreateLogger<ApplicationbooksContext>();
-                logger.LogError(e, "Error al ejecutar el Seed de Categoria.");
+                logger.LogError(e, "Error al ejecutar el Seed de autores.");
             }
         }
     }

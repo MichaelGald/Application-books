@@ -14,7 +14,8 @@ namespace Application_books.Helpers
         private void MapsForLibros()
         {
             CreateMap<LibroEntity, LibroDto>();
-            CreateMap<LibroCreateDto, LibroEntity>();
+            CreateMap<LibroEditDto, LibroEntity>();
+            //.ForMember(dest => dest.IdLibro, opt => opt.Ignore()); // No mapees el Id si es una PK
             CreateMap<LibroEditDto, LibroEntity>();
         }
     }

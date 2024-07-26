@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Application_books.Migrations
 {
     /// <inheritdoc />
-    public partial class initmigration : Migration
+    public partial class Book : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -49,11 +49,11 @@ namespace Application_books.Migrations
                 columns: table => new
                 {
                     id_libro = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    titulo = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    descripcion = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    genero = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    FechadeCreación = table.Column<DateTime>(name: "Fecha de Creación", type: "datetime2", maxLength: 50, nullable: false),
-                    pdf_libro = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    titulo = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    descripcion = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    genero = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    created_time = table.Column<DateTime>(type: "datetime2", maxLength: 50, nullable: false),
+                    pdf_libro = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
                     id_autor = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
