@@ -1,5 +1,7 @@
 ﻿using Application_books.Database;
 using Application_books.Helpers;
+using Application_books.Services;
+using Application_books.Services.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace Application_books
@@ -21,6 +23,8 @@ namespace Application_books
 
             //Add Custom services
             services.AddDbContext<ApplicationbooksContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddTransient<ILibrosServices, LibrosServices>();
 
             // Configurar AutoMapper
             services.AddAutoMapper(typeof(AutoMapperProfile));

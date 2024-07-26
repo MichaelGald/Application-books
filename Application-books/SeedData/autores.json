@@ -1,0 +1,12 @@
+ [
+    {
+      "IdAutor": "62b0c3ea-2421-4a75-a3a1-737779e88766",
+      "NombreAutor": "F. Scott Fitzgerald",
+      "Bibliografia": "Autor de El Gran Gatsby, una novela sobre la decadencia del sueño americano."
+    },
+  {
+    "IdAutor": "50cabc16-efc0-41e7-8cb9-e480c824d12d",
+    "NombreAutor": "George Orwell",
+    "Bibliografia": "Autor de 1984, una novela distópica sobre un régimen totalitario."
+  }
+  ]

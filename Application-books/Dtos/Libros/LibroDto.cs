@@ -12,6 +12,5 @@ namespace Application_books.Dtos.Libros
         public DateTime FechaCreacion { get; set; }
         public string UrlPdf { get; set; }
         public Guid IdAutor { get; set; }
-        public virtual AutorEntity Autor { get; set; }
     }
 }

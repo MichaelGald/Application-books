@@ -4,8 +4,8 @@ using Application_books.Dtos.Common;
 using Application_books.Dtos.Libros;
 using Application_books.Services.Interface;
 using AutoMapper;
-using Newtonsoft.Json;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Application_books.Services
 {

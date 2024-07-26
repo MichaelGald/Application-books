@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Application_books.Database.Entitties
 {
+    [Table("libros_book", Schema = "dbo")]
     public class LibroEntity
     {
         [Key]
@@ -25,7 +26,7 @@ namespace Application_books.Database.Entitties
         public string Genero { get; set; }
 
         [StringLength(50)]
-        [Column("Fecha de Creación")]
+        [Column("created_time")]
         public DateTime FechaCreacion { get; set; } = DateTime.Now;
 
         [Required]

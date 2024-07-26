@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Application_books.Database.Entitties
 {
+    [Table("autor", Schema = "dbo")]
     public class AutorEntity
     {
         [Key]

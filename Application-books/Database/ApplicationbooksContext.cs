@@ -6,7 +6,7 @@ namespace Application_books.Database
 {
     public class ApplicationbooksContext : DbContext
     {
-            public ApplicationbooksContext(DbContextOptions<ApplicationbooksContext> options)
+            public ApplicationbooksContext(DbContextOptions options)
                 : base(options)
             {
             }

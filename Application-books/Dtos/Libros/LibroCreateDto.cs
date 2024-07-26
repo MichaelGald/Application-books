@@ -25,7 +25,5 @@ namespace Application_books.Dtos.Libros
         [Display(Name = "ID del Autor")]
         public Guid IdAutor { get; set; }
 
-        [Display(Name = "Autor")]
-        public virtual AutorEntity Autor { get; set; }
     }
 }

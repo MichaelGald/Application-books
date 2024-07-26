@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Application_books.Database.Entitties
 {
+    [Table("lista_favorito", Schema = "dbo")]
     public class ListaFavoritoEntity
     {
         [Key]
