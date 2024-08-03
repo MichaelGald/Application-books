@@ -1,54 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\jomaa\\onedrive\\documentos\\clases 2pac 2024\\1800 poo\\proyecto poo\\proyecto\\application-books\\application-books\\helpers\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:helpers\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|c:\\users\\jomaa\\onedrive\\documentos\\clases 2pac 2024\\1800 poo\\proyecto poo\\proyecto\\application-books\\application-books\\services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB88782C-BE05-4659-831F-E55AF2A906E5}|Application-books.csproj|solutionrelative:services\\librosservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LibrosServices.cs",
-              "DocumentMoniker": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Services\\LibrosServices.cs",
-              "RelativeDocumentMoniker": "Services\\LibrosServices.cs",
-              "ToolTip": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Services\\LibrosServices.cs",
-              "RelativeToolTip": "Services\\LibrosServices.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAcwFwAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T04:20:49.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AutoMapperProfile.cs",
-              "DocumentMoniker": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Helpers\\AutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "Helpers\\AutoMapperProfile.cs",
-              "ToolTip": "C:\\Users\\jomaa\\OneDrive\\Documentos\\Clases 2Pac 2024\\1800 POO\\Proyecto POO\\Proyecto\\Application-books\\Application-books\\Helpers\\AutoMapperProfile.cs",
-              "RelativeToolTip": "Helpers\\AutoMapperProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T01:01:50.149Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
