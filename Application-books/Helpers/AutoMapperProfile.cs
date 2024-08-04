@@ -1,5 +1,6 @@
 ﻿using Application_books.Database.Entitties;
 using Application_books.Dtos.Libros;
+using Application_books.Dtos.Usuarios;
 using AutoMapper;
 
 namespace Application_books.Helpers
@@ -13,10 +14,15 @@ namespace Application_books.Helpers
 
         private void MapsForLibros()
         {
+            //Libro
             CreateMap<LibroEntity, LibroDto>();
+            CreateMap<LibroCreateDto, LibroEntity>();
             CreateMap<LibroEditDto, LibroEntity>();
-            //.ForMember(dest => dest.IdLibro, opt => opt.Ignore()); // No mapees el Id si es una PK
-            CreateMap<LibroEditDto, LibroEntity>();
+
+            //Usuarios
+            CreateMap<UsuarioEntity, UsuarioDto>();
+            CreateMap<UsuarioCreateDto, UsuarioEntity>();
+            CreateMap<UsuarioEditDto, UsuarioEntity>();
         }
     }
 }
