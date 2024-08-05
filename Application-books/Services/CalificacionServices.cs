@@ -78,7 +78,7 @@ namespace Application_books.Services
                 {
                     StatusCode = 404,
                     Status = false,
-                    Message = $"El registro registro"
+                    Message = $"El registro no se encontro"
                 };
             }
             _mapper.Map<CalificacionEditDto, CalificacionEntity>(dto, calificacionEntity);
