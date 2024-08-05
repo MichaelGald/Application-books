@@ -1,0 +1,19 @@
+meta {
+  name: Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{PATH}}usuarios/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nombre": "string",
+    "email": "string",
+    "password": "string"
+  }
+}
