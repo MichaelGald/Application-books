@@ -57,6 +57,7 @@ namespace Application_books.Services
             var calificacionEntity = _mapper.Map<CalificacionEntity>(dto);
             _context.Calificaciones.Add(calificacionEntity);
             await _context.SaveChangesAsync();
+            calificacionEntity.Fecha = DateTime.UtcNow;
 
             var calificacionDto = _mapper.Map<CalificacionDto>(calificacionEntity);
 
