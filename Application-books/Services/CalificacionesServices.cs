@@ -8,12 +8,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Application_books.Services
 {
-    public class CalificacionServices : ICalificacionesServices
+    public class CalificacionesServices : ICalificacionesServices
     {
         private readonly ApplicationbooksContext _context;
         private readonly IMapper _mapper;
 
-        public CalificacionServices(ApplicationbooksContext context, IMapper mapper) 
+        public CalificacionesServices(ApplicationbooksContext context, IMapper mapper) 
         {
             this._context = context;
             this._mapper = mapper;

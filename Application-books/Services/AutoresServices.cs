@@ -8,12 +8,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Application_books.Services
 {
-    public class AutorServices : IAutorServices
+    public class AutoresServices : IAutorServices
     {
         private readonly ApplicationbooksContext _context;
         private readonly IMapper _mapper;
 
-        public AutorServices(ApplicationbooksContext context, IMapper mapper) 
+        public AutoresServices(ApplicationbooksContext context, IMapper mapper) 
         {
             this._context = context;
             this._mapper = mapper;
@@ -115,11 +115,6 @@ namespace Application_books.Services
                 Message = "Registro borrado correctamente"
             };
         }
-
-
-
-
-
        
     }
 }
