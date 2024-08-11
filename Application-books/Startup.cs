@@ -24,9 +24,9 @@ namespace Application_books
             //Add Custom services
             services.AddDbContext<ApplicationbooksContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddTransient<IAutorServices, AutorServices>();
+            services.AddTransient<IAutorServices, AutoresServices>();
             services.AddTransient<ILibrosServices, LibrosServices>();
-            services.AddTransient<ICalificacionesServices, CalificacionServices>();
+            services.AddTransient<ICalificacionesServices, CalificacionesServices>();
             services.AddTransient<IUsuariosServices, UsuariosServices>();
 <<<<<<< HEAD
             services.AddTransient<IMembresiaServicio, MembresiaServices>();
