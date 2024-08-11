@@ -28,6 +28,10 @@ namespace Application_books
             services.AddTransient<ILibrosServices, LibrosServices>();
             services.AddTransient<ICalificacionesServices, CalificacionServices>();
             services.AddTransient<IUsuariosServices, UsuariosServices>();
+<<<<<<< HEAD
+            services.AddTransient<IMembresiaServicio, MembresiaServices>();
+=======
+>>>>>>> 05a8ee66c43c0e33b97da97cfe17dc4345c9bd9c
 
             // Configurar AutoMapper
             services.AddAutoMapper(typeof(AutoMapperProfile));

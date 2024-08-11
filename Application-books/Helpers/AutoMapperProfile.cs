@@ -2,6 +2,7 @@
 using Application_books.Dtos.Autor;
 using Application_books.Dtos.Calificacion;
 using Application_books.Dtos.Libros;
+using Application_books.Dtos.Membresia;
 using Application_books.Dtos.Usuarios;
 using AutoMapper;
 
@@ -15,6 +16,10 @@ namespace Application_books.Helpers
             MapsForUsuario();
             MapsForAutor();
             MapsForCalificacion();
+<<<<<<< HEAD
+            MapsForMembresia();
+=======
+>>>>>>> 05a8ee66c43c0e33b97da97cfe17dc4345c9bd9c
         }
 
         private void MapsForLibros()
@@ -42,5 +47,14 @@ namespace Application_books.Helpers
             CreateMap<CalificacionCreateDto, CalificacionEntity>();
             CreateMap<CalificacionEditDto, CalificacionEntity>();
         }
+<<<<<<< HEAD
+        private void MapsForMembresia()
+        {
+            CreateMap<MembresiaEntity, MembresiaDto>();
+            CreateMap<MembresiaCreateDto, MembresiaEntity>();
+            CreateMap<MembresiaEditDto, MembresiaEntity>();
+        }
+=======
+>>>>>>> 05a8ee66c43c0e33b97da97cfe17dc4345c9bd9c
     }
 }

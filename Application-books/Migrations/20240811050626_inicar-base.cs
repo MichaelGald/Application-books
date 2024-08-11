@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Application_books.Migrations
 {
     /// <inheritdoc />
-    public partial class Book : Migration
+    public partial class inicarbase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -75,16 +75,18 @@ namespace Application_books.Migrations
                 {
                     id_membresia = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     id_usuario = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    tipo_columna = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
-                    fecha_inicio = table.Column<DateTime>(type: "datetime2", maxLength: 50, nullable: false),
-                    fecha_fin = table.Column<DateTime>(type: "datetime2", maxLength: 50, nullable: false)
+                    activa_membresia = table.Column<bool>(type: "bit", nullable: false),
+                    fecha_inicio = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    fecha_fin = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    dias_restantes = table.Column<int>(type: "int", nullable: true),
+                    fecha_cancelacion = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_membresia", x => x.id_membresia);
                     table.ForeignKey(
-                        name: "FK_membresia_usuario_id_membresia",
-                        column: x => x.id_membresia,
+                        name: "FK_membresia_usuario_id_usuario",
+                        column: x => x.id_usuario,
                         principalSchema: "dbo",
                         principalTable: "usuario",
                         principalColumn: "id_usuario",
@@ -178,6 +180,12 @@ namespace Application_books.Migrations
                 name: "IX_lista_favorito_id_usuario",
                 schema: "dbo",
                 table: "lista_favorito",
+                column: "id_usuario");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_membresia_id_usuario",
+                schema: "dbo",
+                table: "membresia",
                 column: "id_usuario");
         }
 

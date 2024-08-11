@@ -27,7 +27,7 @@ namespace Application_books.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<ResponseDto<UsuarioDto>>> Get(Guid id)
         {
-            var response = await _usuariosServices.GetLUsuarioByAsync(id);
+            var response = await _usuariosServices.GetUsuarioByAsync(id);
             return StatusCode(response.StatusCode, response);
         }
 
