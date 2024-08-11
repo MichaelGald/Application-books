@@ -26,6 +26,9 @@ namespace Application_books
 
             services.AddTransient<IAutorServices, AutorServices>();
             services.AddTransient<ILibrosServices, LibrosServices>();
+            services.AddTransient<ICalificacionesServices, CalificacionServices>();
+            services.AddTransient<IUsuariosServices, UsuariosServices>();
+            services.AddTransient<IMembresiaServicio, MembresiaServices>();
 
             // Configurar AutoMapper
             services.AddAutoMapper(typeof(AutoMapperProfile));

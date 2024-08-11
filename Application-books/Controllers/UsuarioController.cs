@@ -1,7 +1,5 @@
 ﻿using Application_books.Dtos.Common;
-using Application_books.Dtos.Libros;
 using Application_books.Dtos.Usuarios;
-using Application_books.Services;
 using Application_books.Services.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -29,7 +27,7 @@ namespace Application_books.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<ResponseDto<UsuarioDto>>> Get(Guid id)
         {
-            var response = await _usuariosServices.GetLUsuarioByAsync(id);
+            var response = await _usuariosServices.GetUsuarioByAsync(id);
             return StatusCode(response.StatusCode, response);
         }
 

@@ -34,7 +34,7 @@ namespace Application_books.Services
             };
         }
 
-        public async Task<ResponseDto<UsuarioDto>> GetLUsuarioByAsync(Guid id)
+        public async Task<ResponseDto<UsuarioDto>> GetUsuarioByAsync(Guid id)
         {
             //TODO: Agregar include autor para que no aparezca null
             var usuariosEntity = await _booksContext.Usuarios.FirstOrDefaultAsync(c => c.IdUsuario == id);

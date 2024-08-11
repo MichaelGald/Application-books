@@ -1,0 +1,18 @@
+meta {
+  name: Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PATH}}membresia
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "idUsuario": "2d2b9034-92a2-4089-982e-a3af3885223f",
+    "activaMembresia": true
+  }
+}
