@@ -40,6 +40,12 @@ namespace Application_books.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("autor");
 
+                    b.Property<string>("UrlImg")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)")
+                        .HasColumnName("img_autor");
+
                     b.HasKey("IdAutor");
 
                     b.ToTable("autor", "dbo");
@@ -116,6 +122,12 @@ namespace Application_books.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("titulo");
+
+                    b.Property<string>("UrlImg")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)")
+                        .HasColumnName("img_libro");
 
                     b.Property<string>("UrlPdf")
                         .IsRequired()

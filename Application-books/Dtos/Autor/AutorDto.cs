@@ -8,5 +8,6 @@ namespace Application_books.Dtos.Autor
         public Guid IdAutor { get; set; }
         public string NombreAutor { get; set; }
         public string Bibliografia { get; set; }
+        public string UrlImg { get; set; }
     }
 }

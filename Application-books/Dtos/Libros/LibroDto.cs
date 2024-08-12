@@ -10,6 +10,7 @@ namespace Application_books.Dtos.Libros
         public string Descripcion { get; set; }
         public string Genero { get; set; }
         public DateTime FechaCreacion { get; set; }
+        public string UrlImg {  get; set; }
         public string UrlPdf { get; set; }
         public Guid IdAutor { get; set; }
     }

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Application_books.Migrations
 {
     [DbContext(typeof(ApplicationbooksContext))]
-    [Migration("20240811055430_editar-membresia")]
-    partial class editarmembresia
+    [Migration("20240812061425_add-libro")]
+    partial class addlibro
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,6 +42,12 @@ namespace Application_books.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("autor");
+
+                    b.Property<string>("UrlImg")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)")
+                        .HasColumnName("img_autor");
 
                     b.HasKey("IdAutor");
 
@@ -119,6 +125,12 @@ namespace Application_books.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("titulo");
+
+                    b.Property<string>("UrlImg")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)")
+                        .HasColumnName("img_libro");
 
                     b.Property<string>("UrlPdf")
                         .IsRequired()

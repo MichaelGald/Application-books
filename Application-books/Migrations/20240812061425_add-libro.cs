@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Application_books.Migrations
 {
     /// <inheritdoc />
-    public partial class inicarbase : Migration
+    public partial class addlibro : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,7 +21,8 @@ namespace Application_books.Migrations
                 {
                     id_autor = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     autor = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    bibliografia = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: true)
+                    bibliografia = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: true),
+                    img_autor = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -53,6 +54,7 @@ namespace Application_books.Migrations
                     descripcion = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
                     genero = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     created_time = table.Column<DateTime>(type: "datetime2", maxLength: 50, nullable: false),
+                    img_libro = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     pdf_libro = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
                     id_autor = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
@@ -78,7 +80,6 @@ namespace Application_books.Migrations
                     activa_membresia = table.Column<bool>(type: "bit", nullable: false),
                     fecha_inicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     fecha_fin = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    dias_restantes = table.Column<int>(type: "int", nullable: true),
                     fecha_cancelacion = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
