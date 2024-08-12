@@ -1,0 +1,18 @@
+meta {
+  name: Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PATH}}listafavoritos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "idUsuario": "2D2B9034-92A2-4089-982E-A3AF3885223F",
+    "idLibro": "873D965A-EA5B-4F88-8981-92EE347399C9"
+  }
+}

@@ -29,6 +29,7 @@ namespace Application_books
             services.AddTransient<ICalificacionesServices, CalificacionesServices>();
             services.AddTransient<IUsuariosServices, UsuariosServices>();
             services.AddTransient<IMembresiaServicio, MembresiaServices>();
+            services.AddTransient<IListaFavoritoServices, ListaFavoritosServices>();
 
 
             // Configurar AutoMapper
