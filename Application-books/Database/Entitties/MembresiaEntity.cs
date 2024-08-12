@@ -12,19 +12,19 @@ namespace Application_books.Database.Entitties
 
         [Column("id_usuario")]
         public Guid IdUsuario { get; set; }
-        [ForeignKey(nameof(IdMembresia))]
+        [ForeignKey(nameof(IdUsuario))]
         public virtual UsuarioEntity Usuario { get; set; }
 
-        [StringLength(50)]
-        [Column("tipo_columna")]
-        public string TipoMembresia { get; set; }
+        [Column("activa_membresia")]
+        public bool ActivaMembresia { get; set; }
 
-        [StringLength(50)]
         [Column("fecha_inicio")]
         public DateTime FechaInicio { get; set; } = DateTime.Now;
 
-        [StringLength(50)]
         [Column("fecha_fin")]
-        public DateTime FechaFin { get; set; } = DateTime.Now;
+        public DateTime? FechaFin { get; set; }
+
+        [Column("fecha_cancelacion")]
+        public DateTime? FechaCancelacion { get; set; }
     }
 }

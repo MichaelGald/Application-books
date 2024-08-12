@@ -24,7 +24,12 @@ namespace Application_books
             //Add Custom services
             services.AddDbContext<ApplicationbooksContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddTransient<IAutorServices, AutoresServices>();
             services.AddTransient<ILibrosServices, LibrosServices>();
+            services.AddTransient<ICalificacionesServices, CalificacionesServices>();
+            services.AddTransient<IUsuariosServices, UsuariosServices>();
+            services.AddTransient<IMembresiaServicio, MembresiaServices>();
+
 
             // Configurar AutoMapper
             services.AddAutoMapper(typeof(AutoMapperProfile));

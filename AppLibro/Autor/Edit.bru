@@ -1,0 +1,22 @@
+meta {
+  name: Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{PATH}}libros/db0a8063-0a6a-41be-c660-08dcad98f38e
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "titulo": "1984 | Principito",
+      "descripcion": "Una novela distópica de George Orwell sobre un régimen totalitario.",
+      "genero": "Ciencia Ficción",
+      "fechaCreacion": "2024-07-25T17:46:24.9691223",
+      "urlPdf": "https://example.com/1984.pdf",
+      "idAutor": "50cabc16-efc0-41e7-8cb9-e480c824d12d"
+    }
+}
