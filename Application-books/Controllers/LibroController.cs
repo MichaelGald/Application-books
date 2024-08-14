@@ -18,10 +18,16 @@ namespace Application_books.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<ResponseDto<List<LibroDto>>>> GetAll() 
+        public async Task<ActionResult<ResponseDto<PaginationDto<List<LibroDto>>>>> PaginationList(string searchTerm, int page = 1) 
         {
-            var response = await _librosServices.GetLibroListAsync();   
-            return StatusCode(response.StatusCode, response);
+            var response = await _librosServices.GetLibroListAsync(searchTerm, page);
+
+            return StatusCode(response.StatusCode, new
+            {
+                response.Status,
+                response.Message,
+                response.Data,
+            });
         }
        
         [HttpGet("{id}")]

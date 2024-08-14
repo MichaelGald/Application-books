@@ -21,8 +21,8 @@ namespace Application_books.Database.Entitties
         public virtual UsuarioEntity Usuario { get; set; }
 
         [Range(1, 5)]
-        [Column("calificacion")]
-        public int Calificacion { get; set; }
+        [Column("puntuacion")]
+        public int Puntuacion { get; set; }
 
         [StringLength(200)]
         [Column("comentario")]
@@ -31,6 +31,5 @@ namespace Application_books.Database.Entitties
         [StringLength(30)]
         [Column("fecha")]
         public DateTime Fecha { get; set; }
-
     }
 }

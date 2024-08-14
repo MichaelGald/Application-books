@@ -23,7 +23,9 @@ namespace Application_books.Helpers
 
         private void MapsForLibros()
         {
-            CreateMap<LibroEntity, LibroDto>();
+        CreateMap<LibroEntity, LibroDto>()
+        .ForMember(dest => dest.Promedio, opt => opt.MapFrom(src =>
+        src.Calificaciones.Any() ? Math.Round(src.Calificaciones.Average(c => c.Puntuacion), 1) : 0));
             CreateMap<LibroCreateDto, LibroEntity>();
             CreateMap<LibroEditDto, LibroEntity>();
         }

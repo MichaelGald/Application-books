@@ -44,5 +44,7 @@ namespace Application_books.Database.Entitties
         public Guid IdAutor {  get; set; }
         [ForeignKey(nameof(IdAutor))]
         public virtual AutorEntity Autor { get; set; }
+
+        public virtual IEnumerable<CalificacionEntity> Calificaciones { get; set; }
     }
 }

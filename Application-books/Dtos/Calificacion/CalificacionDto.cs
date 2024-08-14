@@ -9,7 +9,7 @@ namespace Application_books.Dtos.Calificacion
         public Guid IdCalificacion { get; set; }
         public Guid IdLibro { get; set; }
         public Guid IdUsuario { get; set; }
-        public int Calificacion { get; set; }
+        public int Puntuacion { get; set; }
         public string Comentario { get; set; }
         public DateTime Fecha { get; set; }
     }

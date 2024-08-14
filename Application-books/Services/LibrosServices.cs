@@ -5,6 +5,7 @@ using Application_books.Dtos.Libros;
 using Application_books.Services.Interface;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 
 namespace Application_books.Services
@@ -13,25 +14,59 @@ namespace Application_books.Services
     {
         private readonly ApplicationbooksContext _booksContext;
         private readonly IMapper _mapper;
+        private readonly int PAGE_SIZE;
 
-        public LibrosServices(ApplicationbooksContext booksContext, IMapper mapper)
+        public LibrosServices(ApplicationbooksContext booksContext, IMapper mapper, IConfiguration configuracion)
         {
             this._booksContext = booksContext;
             this._mapper = mapper;
-        }  
-        public async Task<ResponseDto<List<LibroDto>>> GetLibroListAsync()
+            PAGE_SIZE = configuracion.GetValue<int>("PageSize");
+        }
+        public async Task<ResponseDto<PaginationDto<List<LibroDto>>>> GetLibroListAsync(string searchTerm = "", int page = 1)
         {
-            var librosEntity = await _booksContext.Libros.ToListAsync();
-            var libroDtos = _mapper.Map<List<LibroDto>>(librosEntity);
+            int startIndex = (page - 1) * PAGE_SIZE;
 
-            return new ResponseDto<List<LibroDto>>
+            var libroEntityQuery = _booksContext.Libros
+                .Include(x => x.Calificaciones)
+                .Where(x => x.FechaCreacion <= DateTime.Now);
+
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                searchTerm = searchTerm.ToLower();
+                libroEntityQuery = libroEntityQuery.Where(x =>
+                    x.Titulo.ToLower().Contains(searchTerm));
+            }
+
+            int totalPosts = await libroEntityQuery.CountAsync();
+            int totalPages = (int)Math.Ceiling((double)totalPosts / PAGE_SIZE);
+
+            var librosEntity = await libroEntityQuery
+                .OrderByDescending(x => x.FechaCreacion)
+                .Skip(startIndex)
+                .Take(PAGE_SIZE)
+                .ToListAsync();
+
+            var librosDtos = _mapper.Map<List<LibroDto>>(librosEntity);
+
+            return new ResponseDto<PaginationDto<List<LibroDto>>>
             {
                 StatusCode = 200,
                 Status = true,
-                Message = "Lista de libro obtenida correctamente.",
-                Data = libroDtos,
+                Message = "Lista de libros obtenida correctamente.",
+                Data = new PaginationDto<List<LibroDto>>
+                {
+                    CurrentPage = page,
+                    PageSize = PAGE_SIZE,
+                    TotalItems = totalPosts,
+                    TotalPages = totalPages,
+                    Items = librosDtos,
+                    HasPreviousPage = page > 1,
+                    HasNextPage = page < totalPages,
+                }
             };
         }
+
+
         public async Task<ResponseDto<LibroDto>> GetLibroByAsync(Guid id)
         {
             var librosEntity = await _booksContext.Libros.FirstOrDefaultAsync(c => c.IdLibro == id);

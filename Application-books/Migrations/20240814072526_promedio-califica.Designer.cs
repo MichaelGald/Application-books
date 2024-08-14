@@ -4,6 +4,7 @@ using Application_books.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Application_books.Migrations
 {
     [DbContext(typeof(ApplicationbooksContext))]
-    partial class ApplicationbooksContextModelSnapshot : ModelSnapshot
+    [Migration("20240814072526_promedio-califica")]
+    partial class promediocalifica
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -78,7 +81,7 @@ namespace Application_books.Migrations
 
                     b.Property<int>("Puntuacion")
                         .HasColumnType("int")
-                        .HasColumnName("puntuacion");
+                        .HasColumnName("Puntuacion");
 
                     b.HasKey("IdCalificacion");
 

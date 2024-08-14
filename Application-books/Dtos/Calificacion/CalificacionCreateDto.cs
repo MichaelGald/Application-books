@@ -10,9 +10,9 @@ namespace Application_books.Dtos.Calificacion
         [Display(Name = "IdUsuario")]
         [Required(ErrorMessage = "El Id es requerido.")]
         public Guid IdUsuario { get; set; }
-        [Display(Name = "Calificacion")]
+        [Display(Name = "Puntuacion")]
         [Required(ErrorMessage = "El valor de estrellas es requerido.")]
-        public int Calificacion { get; set; }
+        public int Puntuacion { get; set; }
         [Display(Name = "Comentario")]
         [Required(ErrorMessage = "El comentario es requrido.")]
         public string Comentario { get; set; }
