@@ -1,99 +1,50 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { CiMenuBurger } from "react-icons/ci";
 
 export const Nav = () => {
-    const [isMenuOpen, setMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const toggleMenu = () => setMenuOpen(prevState => !prevState);
-  
+    const handleMenuToggle = () => {
+        setIsMenuOpen(!isMenuOpen);
+    }
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    }
+
     return (
- 
-        <header
-          className="flex items-center justify-between px-4 py-3 shadow-sm sm:px-6 relative bg-blue-800 text-white"
-        >
-          <Link
-            to="inicio/"
-            className="flex items-center gap-2 font-semibold"
-            prefetch={false}
-          >
-            <BookIcon className="h-6 w-6" />
-            <span>Biblioteca VIP</span>
-          </Link>
-          <div className="relative">
-            <button
-              className="text-white hover:text-gray-300"
-              size="icon"
-              onClick={toggleMenu}
-            >
-              <MenuIcon className="h-6 w-6" />
-              <span className="sr-only">Open menu</span>
-            </button>
-            {isMenuOpen && (
-              <div
-                className="dropdown-menu-content absolute right-0 top-12 w-64 border border-gray-300 rounded-lg shadow-lg z-50 bg-white"
-              >
-                <div className="dropdown-menu-item px-4 py-2 hover:bg-gray-100">
-                  <Link to="#" prefetch={false} className="block text-gray-800">
-                    Inicio
-                  </Link>
+        <nav className="px-6 py-4 bg-blue-500 shadow-md">
+            <div className="container flex flex-col mx-auto md:flex-row md:items-center md:justify-between">
+                <div className="flex items-center justify-between">
+                    <div>
+                        <Link to="/inicio" className="text-xl font-bold text-white md:text-2xl">
+                            Biblioteca VIP
+                        </Link>
+                    </div>
+                    <div>
+                        <button
+                            type="button"
+                            onClick={handleMenuToggle}
+                            className="block text-white hover:text-rose-500 md:hidden"
+                        >
+                            <CiMenuBurger className="w-6 h-6 fill-current" />
+                        </button>
+                    </div>
                 </div>
-                <div className="dropdown-menu-item px-4 py-2 hover:bg-gray-100">
-                  <Link to="#" prefetch={false} className="block text-gray-800">
-                    Perfil
-                  </Link>
+
+                <div className={`${isMenuOpen ? "flex" : "hidden"} flex-col md:flex md:flex-row md:mx-4`}>
+                    <Link to="/inicio" className="my-1 text-white hover:text-rose-500 md:mx-4 md:my-0" onClick={closeMenu}>
+                        Inicio
+                    </Link>
+                    <Link to="#" className="my-1  text-white hover:text-rose-500 md:mx-4 md:my-0" onClick={closeMenu}>
+                        Perfil
+                    </Link>
+                    <Link to="#" className="my-1  text-white hover:text-rose-500 md:mx-4 md:my-0" onClick={closeMenu}>
+                        Lista de Favoritos
+                    </Link>
                 </div>
-                <div className="dropdown-menu-separator border-t border-gray-200" />
-                <div className="dropdown-menu-item px-4 py-2 hover:bg-gray-100">
-                  <Link to="#" prefetch={false} className="block text-gray-800">
-                    Lista de Favoritos
-                  </Link>
-                </div>
-                <div className="dropdown-menu-item px-4 py-2 hover:bg-gray-100">
-                  <Link to="#" prefetch={false} className="block text-gray-800">
-                    Autores
-                  </Link>
-                </div>
-              </div>
-            )}
-          </div>
-        </header>
- );
+            </div>
+        </nav>
+    );
 }
-function MenuIcon(props) {
-    return (
-      <svg
-        {...props}
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <line x1="4" x2="20" y1="12" y2="12" />
-        <line x1="4" x2="20" y1="6" y2="6" />
-        <line x1="4" x2="20" y1="18" y2="18" />
-      </svg>
-    );
-  }
-  function BookIcon(props) {
-    return (
-      <svg
-        {...props}
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
-      </svg>
-    );
-  }

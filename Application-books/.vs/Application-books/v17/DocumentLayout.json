@@ -98,21 +98,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LibrosServices.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ApplicacionBooks_2\\Application-books\\Application-books\\Services\\LibrosServices.cs",
-              "RelativeDocumentMoniker": "Services\\LibrosServices.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ApplicacionBooks_2\\Application-books\\Application-books\\Services\\LibrosServices.cs",
-              "RelativeToolTip": "Services\\LibrosServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHMAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T03:48:22.473Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 6,
@@ -159,8 +146,7 @@
               "RelativeToolTip": "Controllers\\LibroController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T05:49:10.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-04T05:49:10.648Z"
             },
             {
               "$type": "Document",
@@ -168,12 +154,24 @@
               "Title": "CalificacionEntity.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ApplicacionBooks_2\\Application-books\\Application-books\\Database\\Entitties\\CalificacionEntity.cs",
               "RelativeDocumentMoniker": "Database\\Entitties\\CalificacionEntity.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\ApplicacionBooks_2\\Application-books\\Application-books\\Database\\Entitties\\CalificacionEntity.cs*",
-              "RelativeToolTip": "Database\\Entitties\\CalificacionEntity.cs*",
-              "ViewState": "AQIAABgAAAAAAAAAAAA4wAsAAAAAAAAA",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ApplicacionBooks_2\\Application-books\\Application-books\\Database\\Entitties\\CalificacionEntity.cs",
+              "RelativeToolTip": "Database\\Entitties\\CalificacionEntity.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAcwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-04T22:29:48.435Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LibrosServices.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\ApplicacionBooks_2\\Application-books\\Application-books\\Services\\LibrosServices.cs",
+              "RelativeDocumentMoniker": "Services\\LibrosServices.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\ApplicacionBooks_2\\Application-books\\Application-books\\Services\\LibrosServices.cs",
+              "RelativeToolTip": "Services\\LibrosServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T03:48:22.473Z"
             },
             {
               "$type": "Document",
@@ -185,8 +183,7 @@
               "RelativeToolTip": "Startup.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAmwCAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T04:54:46.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-04T04:54:46.373Z"
             },
             {
               "$type": "Document",
@@ -198,8 +195,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-04T05:58:18.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-04T05:58:18.762Z"
             },
             {
               "$type": "Document",
