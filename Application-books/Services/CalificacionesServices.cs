@@ -12,11 +12,13 @@ namespace Application_books.Services
     {
         private readonly ApplicationbooksContext _context;
         private readonly IMapper _mapper;
+        private readonly IAuthService _authService;
 
-        public CalificacionesServices(ApplicationbooksContext context, IMapper mapper) 
+        public CalificacionesServices(ApplicationbooksContext context, IMapper mapper, IAuthService authService) 
         {
             this._context = context;
             this._mapper = mapper;
+            this._authService = authService;
         }
         public async Task<ResponseDto<List<CalificacionDto>>> GetCalificacionesListAsync()
         {
@@ -55,9 +57,11 @@ namespace Application_books.Services
         public async Task<ResponseDto<CalificacionDto>> CreateAsync(CalificacionCreateDto dto)
         {
             var calificacionEntity = _mapper.Map<CalificacionEntity>(dto);
+
+            var userIdString = _authService.GetUserId();
+
             _context.Calificaciones.Add(calificacionEntity);
             await _context.SaveChangesAsync();
-            calificacionEntity.Fecha = DateTime.UtcNow;
 
             var calificacionDto = _mapper.Map<CalificacionDto>(calificacionEntity);
 
@@ -81,7 +85,8 @@ namespace Application_books.Services
                     Message = $"El registro no se encontro"
                 };
             }
-            _mapper.Map<CalificacionEditDto, CalificacionEntity>(dto, calificacionEntity);
+            _mapper.Map(dto, calificacionEntity);
+           
             _context.Calificaciones.Update(calificacionEntity);
             await _context.SaveChangesAsync();
 

@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Application_books.Dtos.Calificacion
+namespace Application_books.Dtos.Comentarios
 {
-    public class CalificacionCreateDto
+    public class ComentarioCreateDto
     {
         [Display(Name = "IdLibro")]
         [Required(ErrorMessage = "El Id es requerido.")]
@@ -10,8 +10,8 @@ namespace Application_books.Dtos.Calificacion
         [Display(Name = "IdUsuario")]
         [Required(ErrorMessage = "El Id es requerido.")]
         public Guid IdUsuario { get; set; }
-        [Display(Name = "Puntuacion")]
+        [Display(Name = "Comentario")]
         [Required(ErrorMessage = "El valor de estrellas es requerido.")]
-        public int Puntuacion { get; set; }
+        public string Comentario { get; set; }
     }
 }

@@ -1,14 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Application_books.Database.Entitties
 {
-    [Table("calificacion", Schema = "dbo")]
-    public class CalificacionEntity 
+    public class ComentarioEntity
     {
         [Key]
-        [Column("id_calificacion")]
-        public Guid IdCalificacion { get; set; }
+        [Column("id_comentario")]
+        public Guid IdComentario { get; set; }
 
         [Column("id_libro")]
         public Guid IdLibro { get; set; }
@@ -20,9 +19,11 @@ namespace Application_books.Database.Entitties
         [ForeignKey(nameof(IdUsuario))]
         public virtual UsuarioEntity Usuario { get; set; }
 
-        [Range(1, 5)]
-        [Column("puntuacion")]
-        public int Puntuacion { get; set; }
+        [StringLength(200)]
+        [Column("comentario")]
+        public string Comentario { get; set; }
 
+        [Column("fecha")]
+        public DateTime Fecha { get; set; } = DateTime.Now;
     }
 }

@@ -30,7 +30,8 @@ namespace Application_books
             services.AddTransient<IUsuariosServices, UsuariosServices>();
             services.AddTransient<IMembresiaServicio, MembresiaServices>();
             services.AddTransient<IListaFavoritoServices, ListaFavoritosServices>();
-
+            services.AddTransient<IAuthService, AuthService>();
+            services.AddTransient<IComentariosServices, ComentariosService>();
 
             // Configurar AutoMapper
             services.AddAutoMapper(typeof(AutoMapperProfile));

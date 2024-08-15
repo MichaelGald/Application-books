@@ -1,6 +1,7 @@
 ﻿using Application_books.Database.Entitties;
 using Application_books.Dtos.Autor;
 using Application_books.Dtos.Calificacion;
+using Application_books.Dtos.Comentarios;
 using Application_books.Dtos.Libros;
 using Application_books.Dtos.ListaFavoritos;
 using Application_books.Dtos.Membresia;
@@ -19,6 +20,7 @@ namespace Application_books.Helpers
             MapsForCalificacion();
             MapsForMembresia();
             MapsForListaFavorito();
+            MapsForComentario();
         }
 
         private void MapsForLibros()
@@ -59,6 +61,13 @@ namespace Application_books.Helpers
             CreateMap<ListaFavoritoEntity, ListaFavoritoDto>();
             CreateMap<ListaFavoritoCreateDto, ListaFavoritoEntity>();
             CreateMap<ListaFavoritoEditDto, ListaFavoritoEntity>();
+        }
+
+        private void MapsForComentario()
+        {
+            CreateMap<ComentarioEntity, ComentarioDto>();
+            CreateMap<ComentarioCreateDto, ComentarioEntity>();
+            CreateMap<ComentarioEditDto, ComentarioEntity>();
         }
     }
 }

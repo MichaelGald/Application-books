@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Application_books.Migrations
 {
     /// <inheritdoc />
-    public partial class addlibro : Migration
+    public partial class AuthService : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -102,9 +102,7 @@ namespace Application_books.Migrations
                     id_calificacion = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     id_libro = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     id_usuario = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    calificacion = table.Column<int>(type: "int", nullable: false),
-                    comentario = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
-                    fecha = table.Column<DateTime>(type: "datetime2", maxLength: 30, nullable: false)
+                    puntuacion = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

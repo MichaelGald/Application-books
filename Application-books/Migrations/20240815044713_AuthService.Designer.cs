@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Application_books.Migrations
 {
     [DbContext(typeof(ApplicationbooksContext))]
-    [Migration("20240812061425_add-libro")]
-    partial class addlibro
+    [Migration("20240815044713_AuthService")]
+    partial class AuthService
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -61,20 +61,6 @@ namespace Application_books.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("id_calificacion");
 
-                    b.Property<int>("Calificacion")
-                        .HasColumnType("int")
-                        .HasColumnName("calificacion");
-
-                    b.Property<string>("Comentario")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
-                        .HasColumnName("comentario");
-
-                    b.Property<DateTime>("Fecha")
-                        .HasMaxLength(30)
-                        .HasColumnType("datetime2")
-                        .HasColumnName("fecha");
-
                     b.Property<Guid>("IdLibro")
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("id_libro");
@@ -82,6 +68,10 @@ namespace Application_books.Migrations
                     b.Property<Guid>("IdUsuario")
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("id_usuario");
+
+                    b.Property<int>("Puntuacion")
+                        .HasColumnType("int")
+                        .HasColumnName("puntuacion");
 
                     b.HasKey("IdCalificacion");
 
@@ -233,7 +223,7 @@ namespace Application_books.Migrations
             modelBuilder.Entity("Application_books.Database.Entitties.CalificacionEntity", b =>
                 {
                     b.HasOne("Application_books.Database.Entitties.LibroEntity", "Libro")
-                        .WithMany()
+                        .WithMany("Calificaciones")
                         .HasForeignKey("IdLibro")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -288,6 +278,11 @@ namespace Application_books.Migrations
                         .IsRequired();
 
                     b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("Application_books.Database.Entitties.LibroEntity", b =>
+                {
+                    b.Navigation("Calificaciones");
                 });
 #pragma warning restore 612, 618
         }

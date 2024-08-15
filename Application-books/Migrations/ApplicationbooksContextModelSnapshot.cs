@@ -58,16 +58,6 @@ namespace Application_books.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("id_calificacion");
 
-                    b.Property<string>("Comentario")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
-                        .HasColumnName("comentario");
-
-                    b.Property<DateTime>("Fecha")
-                        .HasMaxLength(30)
-                        .HasColumnType("datetime2")
-                        .HasColumnName("fecha");
-
                     b.Property<Guid>("IdLibro")
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("id_libro");
@@ -87,6 +77,39 @@ namespace Application_books.Migrations
                     b.HasIndex("IdUsuario");
 
                     b.ToTable("calificacion", "dbo");
+                });
+
+            modelBuilder.Entity("Application_books.Database.Entitties.ComentarioEntity", b =>
+                {
+                    b.Property<Guid>("IdComentario")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("id_comentario");
+
+                    b.Property<string>("Comentario")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)")
+                        .HasColumnName("comentario");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("fecha");
+
+                    b.Property<Guid>("IdLibro")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("id_libro");
+
+                    b.Property<Guid>("IdUsuario")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("id_usuario");
+
+                    b.HasKey("IdComentario");
+
+                    b.HasIndex("IdLibro");
+
+                    b.HasIndex("IdUsuario");
+
+                    b.ToTable("Comentarios");
                 });
 
             modelBuilder.Entity("Application_books.Database.Entitties.LibroEntity", b =>
@@ -231,6 +254,25 @@ namespace Application_books.Migrations
                 {
                     b.HasOne("Application_books.Database.Entitties.LibroEntity", "Libro")
                         .WithMany("Calificaciones")
+                        .HasForeignKey("IdLibro")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Application_books.Database.Entitties.UsuarioEntity", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("IdUsuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Libro");
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("Application_books.Database.Entitties.ComentarioEntity", b =>
+                {
+                    b.HasOne("Application_books.Database.Entitties.LibroEntity", "Libro")
+                        .WithMany()
                         .HasForeignKey("IdLibro")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
