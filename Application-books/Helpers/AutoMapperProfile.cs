@@ -1,6 +1,5 @@
 ﻿using Application_books.Database.Entitties;
 using Application_books.Dtos.Autor;
-using Application_books.Dtos.Calificacion;
 using Application_books.Dtos.Libros;
 using Application_books.Dtos.ListaFavoritos;
 using Application_books.Dtos.Membresia;
@@ -14,22 +13,23 @@ namespace Application_books.Helpers
         public AutoMapperProfile()
         {
             MapsForLibros(); 
-            MapsForUsuario();
             MapsForAutor();
+<<<<<<< HEAD
             MapsForCalificacion();
             MapsForMembresia();
             MapsForListaFavorito();
+=======
+>>>>>>> 7e0c0a2195fc86dd14460daf44473dd4f2af3fde
         }
 
         private void MapsForLibros()
         {
+            //Libro
             CreateMap<LibroEntity, LibroDto>();
             CreateMap<LibroCreateDto, LibroEntity>();
             CreateMap<LibroEditDto, LibroEntity>();
-        }
 
-        private void MapsForUsuario()
-        {
+            //Usuarios
             CreateMap<UsuarioEntity, UsuarioDto>();
             CreateMap<UsuarioCreateDto, UsuarioEntity>();
             CreateMap<UsuarioEditDto, UsuarioEntity>();
@@ -40,6 +40,7 @@ namespace Application_books.Helpers
             CreateMap<AutorCreateDto, AutorEntity>();
             CreateMap<AutorEditDto, AutorEntity>();
         }
+<<<<<<< HEAD
         private void MapsForCalificacion()
         {
             CreateMap<CalificacionEntity, CalificacionDto>();
@@ -58,5 +59,7 @@ namespace Application_books.Helpers
             CreateMap<ListaFavoritoCreateDto, ListaFavoritoEntity>();
             CreateMap<ListaFavoritoEditDto, ListaFavoritoEntity>();
         }
+=======
+>>>>>>> 7e0c0a2195fc86dd14460daf44473dd4f2af3fde
     }
 }
