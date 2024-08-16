@@ -40,7 +40,7 @@ export const Nav = () => {
                     <Link to="#" className="my-1  text-white hover:text-rose-500 md:mx-4 md:my-0" onClick={closeMenu}>
                         Perfil
                     </Link>
-                    <Link to="#" className="my-1  text-white hover:text-rose-500 md:mx-4 md:my-0" onClick={closeMenu}>
+                    <Link to="/favorito" className="my-1  text-white hover:text-rose-500 md:mx-4 md:my-0" onClick={closeMenu}>
                         Lista de Favoritos
                     </Link>
                 </div>
