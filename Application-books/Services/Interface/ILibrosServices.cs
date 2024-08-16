@@ -5,7 +5,7 @@ namespace Application_books.Services.Interface
 {
     public interface ILibrosServices
     {
-        Task<ResponseDto<List<LibroDto>>> GetLibroListAsync();
+        Task<ResponseDto<PaginationDto<List<LibroDto>>>> GetLibroListAsync(string searchTerm = "", int page = 1);
         Task<ResponseDto<LibroDto>> GetLibroByAsync(Guid id);
         Task<ResponseDto<LibroDto>> CreateAsync(LibroCreateDto dto);
         Task<ResponseDto<LibroDto>> EditAsync(LibroEditDto dto, Guid id);

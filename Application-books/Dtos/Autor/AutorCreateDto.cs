@@ -10,5 +10,8 @@ namespace Application_books.Dtos.Autor
         [Display(Name = "Descripcion")]
         [MinLength(10, ErrorMessage = "La {0} debe tener al menos {1} caracteres.")]
         public string Bibliografia { get; set; }
+        [Display(Name = "URL de la img")]
+        [Url(ErrorMessage = "La URL de la img no es valida.")]
+        public string UrlImg { get; set; }
     }
 }

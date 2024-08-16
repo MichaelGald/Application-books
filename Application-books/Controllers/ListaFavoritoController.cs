@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Application_books.Controllers
 {
+    [Route("api/listafavoritos")]
+    [ApiController]
     public class ListaFavoritoController : Controller
     {
         private readonly IListaFavoritoServices _listaFavoritoServices;

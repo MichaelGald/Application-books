@@ -18,6 +18,10 @@ namespace Application_books.Dtos.Libros
         [MinLength(4, ErrorMessage = "El {0} debe tener al menos {1} caracteres.")]
         public string Genero { get; set; }
 
+        [Display(Name = "URL de la img")]
+        [Url(ErrorMessage = "La URL de la img no es valida.")]
+        public string UrlImg { get; set; }
+
         [Display(Name = "URL del PDF")]
         [Url(ErrorMessage = "La URL del PDF no es valida.")]
         public string UrlPdf { get; set; }

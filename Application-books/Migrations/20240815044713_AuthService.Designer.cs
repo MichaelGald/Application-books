@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Application_books.Migrations
 {
     [DbContext(typeof(ApplicationbooksContext))]
-    [Migration("20240811050626_inicar-base")]
-    partial class inicarbase
+    [Migration("20240815044713_AuthService")]
+    partial class AuthService
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,6 +43,12 @@ namespace Application_books.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("autor");
 
+                    b.Property<string>("UrlImg")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)")
+                        .HasColumnName("img_autor");
+
                     b.HasKey("IdAutor");
 
                     b.ToTable("autor", "dbo");
@@ -55,20 +61,6 @@ namespace Application_books.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("id_calificacion");
 
-                    b.Property<int>("Calificacion")
-                        .HasColumnType("int")
-                        .HasColumnName("calificacion");
-
-                    b.Property<string>("Comentario")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
-                        .HasColumnName("comentario");
-
-                    b.Property<DateTime>("Fecha")
-                        .HasMaxLength(30)
-                        .HasColumnType("datetime2")
-                        .HasColumnName("fecha");
-
                     b.Property<Guid>("IdLibro")
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("id_libro");
@@ -76,6 +68,10 @@ namespace Application_books.Migrations
                     b.Property<Guid>("IdUsuario")
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("id_usuario");
+
+                    b.Property<int>("Puntuacion")
+                        .HasColumnType("int")
+                        .HasColumnName("puntuacion");
 
                     b.HasKey("IdCalificacion");
 
@@ -119,6 +115,12 @@ namespace Application_books.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("titulo");
+
+                    b.Property<string>("UrlImg")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)")
+                        .HasColumnName("img_libro");
 
                     b.Property<string>("UrlPdf")
                         .IsRequired()
@@ -167,10 +169,6 @@ namespace Application_books.Migrations
                     b.Property<bool>("ActivaMembresia")
                         .HasColumnType("bit")
                         .HasColumnName("activa_membresia");
-
-                    b.Property<int?>("DiasRestantes")
-                        .HasColumnType("int")
-                        .HasColumnName("dias_restantes");
 
                     b.Property<DateTime?>("FechaCancelacion")
                         .HasColumnType("datetime2")
@@ -225,7 +223,7 @@ namespace Application_books.Migrations
             modelBuilder.Entity("Application_books.Database.Entitties.CalificacionEntity", b =>
                 {
                     b.HasOne("Application_books.Database.Entitties.LibroEntity", "Libro")
-                        .WithMany()
+                        .WithMany("Calificaciones")
                         .HasForeignKey("IdLibro")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -280,6 +278,11 @@ namespace Application_books.Migrations
                         .IsRequired();
 
                     b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("Application_books.Database.Entitties.LibroEntity", b =>
+                {
+                    b.Navigation("Calificaciones");
                 });
 #pragma warning restore 612, 618
         }

@@ -30,6 +30,11 @@ namespace Application_books.Database.Entitties
         public DateTime FechaCreacion { get; set; } = DateTime.Now;
 
         [Required]
+        [StringLength(200)]
+        [Column("img_libro")]
+        public string UrlImg { get; set; }
+
+        [Required]
         [StringLength(500)]
         [Column("pdf_libro")]
         public string UrlPdf { get; set; }
@@ -39,5 +44,7 @@ namespace Application_books.Database.Entitties
         public Guid IdAutor {  get; set; }
         [ForeignKey(nameof(IdAutor))]
         public virtual AutorEntity Autor { get; set; }
+
+        public virtual IEnumerable<CalificacionEntity> Calificaciones { get; set; }
     }
 }

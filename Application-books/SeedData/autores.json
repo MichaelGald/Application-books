@@ -2,16 +2,19 @@
   {
     "IdAutor": "62b0c3ea-2421-4a75-a3a1-737779e88766",
     "NombreAutor": "F. Scott Fitzgerald",
-    "Bibliografia": "Autor de El Gran Gatsby, una novela sobre la decadencia del sueño americano."
+    "Bibliografia": "Autor de El Gran Gatsby, una novela sobre la decadencia del sueño americano.",
+    "UrlImg": "https://static.cegal.es/imagenes/marcadas/9788419/978841965491.gif"
   },
   {
     "IdAutor": "50cabc16-efc0-41e7-8cb9-e480c824d12d",
     "NombreAutor": "George Orwell",
-    "Bibliografia": "Autor de 1984, una novela distópica sobre un régimen totalitario."
+    "Bibliografia": "Autor de 1984, una novela distópica sobre un régimen totalitario.",
+    "UrlImg": "https://static.cegal.es/imagenes/marcadas/9788419/978841965491.gif"
   },
   {
     "IdAutor": "8c0754b6-d7b2-40e8-9cf3-f8fabbccd4f7",
     "NombreAutor": "Patric Patricio",
-    "Bibliografia": "Autor de 1999, una novela distópica sobre un régimen totalitario."
+    "Bibliografia": "Autor de 1999, una novela distópica sobre un régimen totalitario.",
+    "UrlImg": "https://static.cegal.es/imagenes/marcadas/9788419/978841965491.gif"
   }
 ]

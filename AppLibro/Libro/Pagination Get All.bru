@@ -1,0 +1,16 @@
+meta {
+  name: Pagination Get All
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{PATH}}libros/?searchTeam&page=2
+  body: none
+  auth: none
+}
+
+query {
+  searchTeam: 
+  page: 2
+}

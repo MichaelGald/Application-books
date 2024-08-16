@@ -18,5 +18,7 @@ namespace Application_books.Database
             public DbSet<MembresiaEntity> Membresias { get; set; }
             public DbSet<UsuarioEntity> Usuarios { get; set; }
 
+            public DbSet<ComentarioEntity> Comentarios { get; set; }
+
     }
 }

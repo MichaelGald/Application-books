@@ -30,9 +30,9 @@ namespace Application_books
             services.AddTransient<ICalificacionesServices, CalificacionesServices>();
             services.AddTransient<IUsuariosServices, UsuariosServices>();
             services.AddTransient<IMembresiaServicio, MembresiaServices>();
-
-=======
->>>>>>> 7e0c0a2195fc86dd14460daf44473dd4f2af3fde
+            services.AddTransient<IListaFavoritoServices, ListaFavoritosServices>();
+            services.AddTransient<IAuthService, AuthService>();
+            services.AddTransient<IComentariosServices, ComentariosService>();
 
             // Configurar AutoMapper
             services.AddAutoMapper(typeof(AutoMapperProfile));

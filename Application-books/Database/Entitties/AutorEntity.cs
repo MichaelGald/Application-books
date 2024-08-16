@@ -18,5 +18,10 @@ namespace Application_books.Database.Entitties
         [StringLength(300)]
         [Column("bibliografia")]
         public string Bibliografia { get; set; }
+
+        [Required]
+        [StringLength(200)]
+        [Column("img_autor")]
+        public string UrlImg { get; set; }
     }
 }
