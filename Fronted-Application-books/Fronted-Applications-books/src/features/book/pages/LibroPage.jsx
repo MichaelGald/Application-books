@@ -2,31 +2,38 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiOutlineStar } from "react-icons/hi";
+import { BsHeart } from "react-icons/bs";
 
 export const LibroPage = () => {
   const [comment, setComment] = useState("");
-  const [rating, setRating] = useState(0);
   const [comments, setComments] = useState([
     {
       id: 1,
       name: "John Doe",
-      rating: 4,
       text: "Increíble Libro tiene una historia fascinante",
     },
   ]);
 
+  const [isFavorite, setIsFavorite] = useState(false);
+  const [rating, setRating] = useState(0); 
+
+  const handleFavoriteClick = () => {
+    setIsFavorite(!isFavorite);
+  };
+
+  const handleBookRating = (newRating) => {
+    setRating(newRating);
+  };
 
   const handleCommentSubmit = (e) => {
     e.preventDefault();
     const newComment = {
       id: comments.length + 1,
       name: "Anonymous",
-      rating,
       text: comment,
     };
     setComments([...comments, newComment]);
     setComment("");
-    setRating(0); 
   };
 
   return (
@@ -47,13 +54,16 @@ export const LibroPage = () => {
             <h1 className="text-3xl font-bold text-blue-600">El Principito</h1>
             <div className="flex items-center gap-2 mt-2">
               <div className="flex items-center gap-1">
-                <HiOutlineStar  className="w-5 h-5 text-yellow-500" />
-                <HiOutlineStar  className="w-5 h-5 text-yellow-500" />
-                <HiOutlineStar  className="w-5 h-5 text-yellow-500" />
-                <HiOutlineStar className="w-5 h-5 text-yellow-500" />
-                <HiOutlineStar  className="w-5 h-5 text-gray-300" />
+                {Array.from({ length: 5 }, (_, i) => (
+                  <HiOutlineStar
+                    key={i}
+                    className={`w-6 h-6 ${
+                      i < rating ? "text-yellow-500" : "text-gray-300"
+                    }`}
+                  />
+                ))}
               </div>
-              <span className="text-gray-600">4.5</span>
+              <span className="text-gray-600">{rating ? rating.toFixed(1) : "N/A"}</span>
             </div>
             <div className="mt-2 text-gray-600">
               Ficción, Aventura, Inspiración
@@ -85,7 +95,7 @@ export const LibroPage = () => {
               Antoine de Saint-Exupéry
             </Link>
           </div>
-          <div className="mt-4">
+          <div className="mt-4 flex flex-col sm:flex-row sm:gap-4">
             <Link
               to="https://www.imprentanacional.go.cr/editorialdigital/libros/literatura%20infantil/el_principito_edincr.pdf"
               target="_blank"
@@ -94,80 +104,84 @@ export const LibroPage = () => {
             >
               Leer Libro en Nueva Pestaña
             </Link>
+            <button
+              type="button"
+              className={`flex items-center h-9 mt-4 sm:mt-0 text-blue-600 hover:text-blue-800 transition-colors duration-200 ${
+                isFavorite ? 'text-rose-500' : ''
+              }`}
+              onClick={handleFavoriteClick}
+            >
+              <BsHeart className={`w-4 h-4 mr-2 transition-transform duration-200 transform hover:scale-125 ${
+                isFavorite ? 'fill-current text-rose-500' : ''
+              }`} />
+              {isFavorite ? 'Favorito' : 'Agregar a Favoritos'}
+            </button>
           </div>
-        </div>
-      </div>
-      <div className="my-12 border-t border-gray-300" />
 
-<div>
-  <h2 className="text-2xl font-bold mb-6 text-gray-800">Agregar Comentarios</h2>
-  <form onSubmit={handleCommentSubmit} className="grid gap-4">
-    <div className="flex items-center gap-1">
-      {Array.from({ length: 5 }, (_, i) => (
-        <HiOutlineStar
-          key={i}
-          className={`w-6 h-6 cursor-pointer ${
-            i < rating ? "text-yellow-500" : "text-gray-300"
-          }`}
-          onClick={() => setRating(i + 1)}
-        />
-      ))}
-    </div>
-    <textarea
-      className="w-full p-4 border-2 border-gray-300 rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
-      rows="4"
-      placeholder="Escribe tu comentario aquí..."
-      value={comment}
-      onChange={(e) => setComment(e.target.value)}
-    />
-    <button
-      type="submit"
-      className="inline-flex h-9 items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-    >
-      Enviar Comentario
-    </button>
-  </form>
-</div>
-
-<div className="my-12 border-t border-gray-300" />
-
-<div>
-  <h2 className="text-2xl font-bold mb-6 text-gray-800">Comentarios</h2>
-  <div className="grid gap-8">
-    {comments.map((comment) => (
-      <div className="flex gap-4 p-4 border border-gray-300 rounded-md shadow-sm" key={comment.id}>
-        <div className="w-12 h-12 border rounded-full flex items-center justify-center">
-          <img
-            src="https://img.asmedia.epimg.net/resizer/v2/6OTABRTH3NFIPBIGSREW7C6ACA.jpg?auth=f5f14d21cc8dc0271f90eb98fcb2fa949d7bf56df64218ceb8cfa1e595afe8c5&width=1472&height=1104&smart=true"
-            alt="@username"
-            className="rounded-full w-full h-full object-cover"
-          />
-        </div>
-        <div className="grid gap-2">
-          <div className="flex items-center gap-2">
-            <div className="font-semibold text-gray-800">{comment.name}</div>
-            <div className="flex items-center gap-1 text-xs font-semibold text-gray-600">
+          {/* Sección para calificar el libro */}
+          <div className="mt-4">
+            <h2 className="text-xl font-semibold text-gray-800">Calificar Libro</h2>
+            <div className="flex items-center gap-1 mt-2">
               {Array.from({ length: 5 }, (_, i) => (
-                <HiOutlineStar 
+                <HiOutlineStar
                   key={i}
-                  className={`w-4 h-4 ${
-                    i < comment.rating
-                      ? "text-yellow-500"
-                      : "text-gray-300"
+                  className={`w-6 h-6 cursor-pointer transition-transform duration-300 ${
+                    i < rating ? "text-yellow-500 scale-125" : "text-gray-300"
                   }`}
+                  onClick={() => handleBookRating(i + 1)}
                 />
               ))}
             </div>
           </div>
-          <p className="text-gray-600">{comment.text}</p>
         </div>
       </div>
-    ))}
-  </div>
-</div>
-</div>
-);
+
+      <div className="my-12 border-t border-gray-300" />
+
+      <div>
+        <h2 className="text-2xl font-bold mb-6 text-gray-800">Agregar Comentarios</h2>
+        <form onSubmit={handleCommentSubmit} className="grid gap-4">
+          <textarea
+            className="w-full p-4 border-2 border-gray-300 rounded-md focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+            rows="4"
+            placeholder="Escribe tu comentario aquí..."
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
+          />
+          <button
+            type="submit"
+            className="inline-flex h-9 items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            Enviar Comentario
+          </button>
+        </form>
+      </div>
+
+      <div className="my-12 border-t border-gray-300" />
+
+      <div>
+        <h2 className="text-2xl font-bold mb-6 text-gray-800">Comentarios</h2>
+        <div className="grid gap-8">
+          {comments.map((comment) => (
+            <div className="flex gap-4 p-4 border border-gray-300 rounded-md shadow-sm" key={comment.id}>
+              <div className="w-12 h-12 border rounded-full flex items-center justify-center">
+                <img
+                  src="https://img.asmedia.epimg.net/resizer/v2/6OTABRTH3NFIPBIGSREW7C6ACA.jpg?auth=f5f14d21cc8dc0271f90eb98fcb2fa949d7bf56df64218ceb8cfa1e595afe8c5&width=1472&height=1104&smart=true"
+                  alt="@username"
+                  className="rounded-full w-full h-full object-cover"
+                />
+              </div>
+              <div className="grid gap-2">
+                <div className="flex items-center gap-2">
+                  <div className="font-semibold text-gray-800">{comment.name}</div>
+                </div>
+                <p className="text-gray-600">{comment.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 };
-
-
 
