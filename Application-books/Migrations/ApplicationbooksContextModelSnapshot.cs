@@ -157,16 +157,23 @@ namespace Application_books.Migrations
             modelBuilder.Entity("Application_books.Database.Entitties.MembresiaEntity", b =>
                 {
                     b.Property<Guid>("IdMembresia")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("id_membresia");
 
-                    b.Property<DateTime>("FechaFin")
-                        .HasMaxLength(50)
+                    b.Property<bool>("ActivaMembresia")
+                        .HasColumnType("bit")
+                        .HasColumnName("activa_membresia");
+
+                    b.Property<DateTime?>("FechaCancelacion")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("fecha_cancelacion");
+
+                    b.Property<DateTime?>("FechaFin")
                         .HasColumnType("datetime2")
                         .HasColumnName("fecha_fin");
 
                     b.Property<DateTime>("FechaInicio")
-                        .HasMaxLength(50)
                         .HasColumnType("datetime2")
                         .HasColumnName("fecha_inicio");
 
@@ -174,12 +181,9 @@ namespace Application_books.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("id_usuario");
 
-                    b.Property<string>("TipoMembresia")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
-                        .HasColumnName("tipo_columna");
-
                     b.HasKey("IdMembresia");
+
+                    b.HasIndex("IdUsuario");
 
                     b.ToTable("membresia", "dbo");
                 });
@@ -264,7 +268,7 @@ namespace Application_books.Migrations
                 {
                     b.HasOne("Application_books.Database.Entitties.UsuarioEntity", "Usuario")
                         .WithMany()
-                        .HasForeignKey("IdMembresia")
+                        .HasForeignKey("IdUsuario")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

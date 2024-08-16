@@ -21,7 +21,6 @@ namespace Application_books.Services
         }  
         public async Task<ResponseDto<List<LibroDto>>> GetLibroListAsync()
         {
-            //TODO: Agregar include autor para que no aparezca null
             var librosEntity = await _booksContext.Libros.ToListAsync();
             var libroDtos = _mapper.Map<List<LibroDto>>(librosEntity);
 
@@ -35,7 +34,6 @@ namespace Application_books.Services
         }
         public async Task<ResponseDto<LibroDto>> GetLibroByAsync(Guid id)
         {
-            //TODO: Agregar include autor para que no aparezca null
             var librosEntity = await _booksContext.Libros.FirstOrDefaultAsync(c => c.IdLibro == id);
             if (librosEntity == null)
             {
