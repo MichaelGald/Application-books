@@ -35,6 +35,16 @@ namespace Application_books
 
             // Configurar AutoMapper
             services.AddAutoMapper(typeof(AutoMapperProfile));
+
+            services.AddCors(opt =>
+            {
+                var allowsURLS = Configuration.GetSection("AllowURLS").Get<string[]>();
+                opt.AddPolicy("CorsPolicy", builder => builder
+                .WithOrigins(allowsURLS)
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -48,6 +58,9 @@ namespace Application_books
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            // Aqui se sgrega de la conexion
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 
