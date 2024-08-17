@@ -23,5 +23,7 @@ namespace Application_books.Database.Entitties
         [StringLength(200)]
         [Column("img_autor")]
         public string UrlImg { get; set; }
+
+        public ICollection<LibroEntity> Libros { get; set; } = new List<LibroEntity>();
     }
 }

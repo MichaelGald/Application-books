@@ -20,7 +20,7 @@ namespace Application_books.Services
         }
         public async Task<ResponseDto<List<AutorDto>>> GetAutorListAsync()
         {
-            var autorEntity = await _context.Autores.ToListAsync();
+            var autorEntity = await _context.Autores.Include(a => a.Libros).ToListAsync();
             var autorDtos = _mapper.Map<List<AutorDto>>(autorEntity);
 
             return new ResponseDto<List<AutorDto>>
@@ -33,7 +33,7 @@ namespace Application_books.Services
         }
         public async Task<ResponseDto<AutorDto>> GetAutorByAsync(Guid id)
         {
-            var autorEntity = await _context.Autores.FirstOrDefaultAsync(c => c.IdAutor == id);
+            var autorEntity = await _context.Autores.Include(a => a.Libros).FirstOrDefaultAsync(c => c.IdAutor == id);
             if (autorEntity == null)
             {
                 return new ResponseDto<AutorDto>
