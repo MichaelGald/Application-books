@@ -22,7 +22,7 @@ namespace Application_books.Services
 
         public async Task<ResponseDto<List<UsuarioDto>>> GetUsuariosListAsync()
         {
-            var usuariosEntity = await _booksContext.Usuarios.ToListAsync();
+            var usuariosEntity = await _booksContext.Usuarios.Include(a => a.Membresia).ToListAsync();
             var usuariosDtos = _mapper.Map<List<UsuarioDto>>(usuariosEntity);
 
             return new ResponseDto<List<UsuarioDto>>
@@ -37,7 +37,7 @@ namespace Application_books.Services
         public async Task<ResponseDto<UsuarioDto>> GetUsuarioByAsync(Guid id)
         {
             //TODO: Agregar include autor para que no aparezca null
-            var usuariosEntity = await _booksContext.Usuarios.FirstOrDefaultAsync(c => c.IdUsuario == id);
+            var usuariosEntity = await _booksContext.Usuarios.Include(a => a.Membresia).FirstOrDefaultAsync(c => c.IdUsuario == id);
             if (usuariosEntity == null)
             {
                 return new ResponseDto<UsuarioDto>

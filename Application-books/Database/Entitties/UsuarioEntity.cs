@@ -21,5 +21,7 @@ namespace Application_books.Database.Entitties
         [StringLength(20)]
         [Column("password")]
         public string Password { get; set; }
+
+        public ICollection<MembresiaEntity> Membresia { get; set; } = new List<MembresiaEntity>();
     }
 }
