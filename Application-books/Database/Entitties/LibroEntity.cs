@@ -16,12 +16,12 @@ namespace Application_books.Database.Entitties
         public string Titulo { get; set; }
 
         [Required]
-        [StringLength(500)]
+        [StringLength(2000)]
         [Column("descripcion")]
         public string Descripcion { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(100)]
         [Column("genero")]
         public string Genero { get; set; }
 
@@ -30,7 +30,7 @@ namespace Application_books.Database.Entitties
         public DateTime FechaCreacion { get; set; } = DateTime.Now;
 
         [Required]
-        [StringLength(200)]
+        [StringLength(500)]
         [Column("img_libro")]
         public string UrlImg { get; set; }
 

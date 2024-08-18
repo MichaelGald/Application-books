@@ -15,12 +15,12 @@ namespace Application_books.Database.Entitties
         [Column("autor")]
         public string NombreAutor { get; set; }
 
-        [StringLength(300)]
+        [StringLength(1000)]
         [Column("bibliografia")]
         public string Bibliografia { get; set; }
 
         [Required]
-        [StringLength(200)]
+        [StringLength(500)]
         [Column("img_autor")]
         public string UrlImg { get; set; }
 

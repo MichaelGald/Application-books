@@ -1,20 +1,116 @@
 [
   {
-    "IdAutor": "62b0c3ea-2421-4a75-a3a1-737779e88766",
-    "NombreAutor": "F. Scott Fitzgerald",
-    "Bibliografia": "Autor de El Gran Gatsby, una novela sobre la decadencia del sueño americano.",
-    "UrlImg": "https://static.cegal.es/imagenes/marcadas/9788419/978841965491.gif"
+    "IdAutor": "3d3f676a-c1e7-4166-a058-87ad83b94b54",
+    "NombreAutor": "Miguel de Cervantes",
+    "Bibliografia": "Miguel de Cervantes es uno de los autores más influyentes de la literatura española, conocido principalmente por su obra maestra, 'Don Quijote de la Mancha'. Esta novela, considerada la primera novela moderna, explora temas de realidad y ficción a través de las aventuras de un caballero y su fiel escudero en un mundo que cuestiona las normas sociales y la percepción de la realidad. Cervantes ha dejado una marca indeleble en la literatura universal, con una prosa rica y una visión crítica de la sociedad de su tiempo.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Cervantes_Jáuregui.jpg/1200px-Cervantes_Jáuregui.jpg"
   },
   {
-    "IdAutor": "50cabc16-efc0-41e7-8cb9-e480c824d12d",
+    "IdAutor": "ddabb376-9955-47fd-9d30-dba90947b314",
+    "NombreAutor": "Stephen King",
+    "Bibliografia": "Stephen King es un autor estadounidense famoso por sus novelas de terror, suspenso y fantasía. Nacido en 1947, King ha escrito más de 60 novelas y 200 relatos cortos. Su obra abarca desde clásicos del horror como 'Carrie' y 'El resplandor' hasta fascinantes narrativas de ciencia ficción y fantasía como 'La Torre Oscura'. King es conocido por su habilidad para explorar la psicología humana y los miedos más profundos, convirtiéndose en una figura icónica en la literatura contemporánea.",
+    "UrlImg": "https://cdn.britannica.com/20/217720-050-857D712B/American-novelist-Stephen-King-2004.jpg"
+  },
+  {
+    "IdAutor": "f93da9b1-08a8-46bd-8a57-de5ad119cc0b",
+    "NombreAutor": "Franz Kafka",
+    "Bibliografia": "Franz Kafka es un escritor checo cuya obra ha sido fundamental en el desarrollo de la literatura moderna. Conocido por su estilo único y su habilidad para explorar la alienación y la burocracia, Kafka ha dejado una profunda impresión en la literatura con obras como 'La metamorfosis'. Sus escritos a menudo abordan el absurdo de la existencia y las complejidades de las estructuras sociales, ofreciendo una crítica aguda y a menudo surrealista de la condición humana.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Franz_Kafka%2C_1923.jpg/640px-Franz_Kafka%2C_1923.jpg"
+  },
+  {
+    "IdAutor": "35d15b03-2fad-4f6b-8be9-f3f2f109682a",
+    "NombreAutor": "John Steinbeck",
+    "Bibliografia": "John Steinbeck fue un escritor estadounidense cuya obra se caracteriza por su enfoque en los problemas sociales y la vida de los más desfavorecidos. Con libros como 'Las uvas de la ira', Steinbeck abordó temas de injusticia social y desigualdad económica en Estados Unidos durante la Gran Depresión. Su narrativa es rica en detalle y compasión, reflejando las luchas y esperanzas de sus personajes en un contexto de adversidad.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/d/d7/John_Steinbeck_1939_%28cropped%29.jpg"
+  },
+  {
+    "IdAutor": "6e186857-5951-4082-9db2-d2acbdd8e505",
+    "NombreAutor": "Fiódor Dostoyevski",
+    "Bibliografia": "Fiódor Dostoyevski, un destacado autor ruso del siglo XIX, es conocido por sus profundos estudios psicológicos y filosóficos sobre la naturaleza humana. Con obras como 'Los hermanos Karamazov', Dostoyevski explora temas complejos como la moralidad, el sufrimiento y la redención. Su capacidad para sumergirse en la psique de sus personajes y explorar cuestiones existenciales ha hecho de él una figura central en la literatura mundial.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/7/78/Vasily_Perov_-_Портрет_Ф.М.Достоевского_-_Google_Art_Project.jpg"
+  },
+  {
+    "IdAutor": "4ec3d0ab-ff5c-4de2-97c9-1fe3b409ab94",
+    "NombreAutor": "Gabriel García Márquez",
+    "Bibliografia": "Gabriel García Márquez, un autor colombiano ganador del Premio Nobel de Literatura, es célebre por su contribución al realismo mágico con su obra 'Cien años de soledad'. García Márquez teje historias que combinan lo mágico con lo real, explorando temas de amor, política y la historia latinoamericana. Su narrativa única y su habilidad para capturar la esencia de su cultura han hecho de él una figura clave en la literatura del siglo XX.",
+    "UrlImg": "https://www.biografiasyvidas.com/biografia/g/fotos/garcia_marquez_gabriel.jpg"
+  },
+  {
+    "IdAutor": "ea9ad9a4-71f9-48b2-a026-1cb823fcd7ae",
+    "NombreAutor": "Oscar Wilde",
+    "Bibliografia": "Oscar Wilde fue un dramaturgo y novelista irlandés conocido por su ingenio y aguda crítica social. Su obra, que incluye 'El retrato de Dorian Gray', explora la belleza, la moralidad y la decadencia en la sociedad victoriana. Wilde es famoso por sus epigramas ingeniosos y su estilo literario distintivo, así como por su vida personal controvertida y su defensa de la libertad individual.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Oscar_Wilde_portrait.jpg"
+  },
+  {
+    "IdAutor": "bf5419bc-e165-4025-a227-b0be835f8c78",
+    "NombreAutor": "Mark Twain",
+    "Bibliografia": "Mark Twain, seudónimo de Samuel Langhorne Clemens, es un escritor estadounidense famoso por sus novelas 'Las aventuras de Huckleberry Finn' y 'Las aventuras de Tom Sawyer'. Twain es conocido por su agudo sentido del humor y su crítica a la sociedad estadounidense del siglo XIX. Sus obras a menudo exploran temas de libertad, moralidad y la lucha contra la injusticia.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Mark_Twain_by_AF_Bradley.jpg/640px-Mark_Twain_by_AF_Bradley.jpg"
+  },
+  {
+    "IdAutor": "e6054c7b-526c-4dde-a0a6-80eed3fccade",
+    "NombreAutor": "Herman Melville",
+    "Bibliografia": "Herman Melville fue un escritor estadounidense cuya obra más conocida, 'Moby Dick', es un clásico de la literatura mundial. Melville explora temas de obsesión, el poder de la naturaleza y la condición humana en un entorno épico y simbólico. Su estilo narrativo y su habilidad para tejer alegorías complejas han hecho de él una figura central en la literatura estadounidense.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Herman_Melville_by_Joseph_O_Eaton.jpg"
+  },
+  {
+    "IdAutor": "a8ca4bcf-d5df-4c75-aa78-38c9e730008f",
     "NombreAutor": "George Orwell",
-    "Bibliografia": "Autor de 1984, una novela distópica sobre un régimen totalitario.",
-    "UrlImg": "https://static.cegal.es/imagenes/marcadas/9788419/978841965491.gif"
+    "Bibliografia": "George Orwell, seudónimo de Eric Blair, es un autor británico conocido por su aguda crítica social y política. Sus novelas '1984' y 'Rebelión en la granja' ofrecen una visión distópica de regímenes totalitarios y la manipulación política. Orwell explora temas de poder, control y libertad individual, y su obra sigue siendo relevante en el análisis de las estructuras de poder y la opresión en la sociedad moderna.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/8/82/George_Orwell%2C_c._1940_%2841928180381%29.jpg"
   },
   {
-    "IdAutor": "8c0754b6-d7b2-40e8-9cf3-f8fabbccd4f7",
-    "NombreAutor": "Patric Patricio",
-    "Bibliografia": "Autor de 1999, una novela distópica sobre un régimen totalitario.",
-    "UrlImg": "https://static.cegal.es/imagenes/marcadas/9788419/978841965491.gif"
+    "IdAutor": "522de99c-cd09-4661-8467-89bda7d520c7",
+    "NombreAutor": "Carlos Fuentes",
+    "Bibliografia": "Carlos Fuentes fue un destacado autor mexicano cuya obra abarca una amplia gama de géneros y estilos. Su novela 'La muerte de Artemio Cruz' es una exploración profunda de la historia y la política de México, abordando temas de poder, corrupción y la identidad nacional. Fuentes combina elementos del realismo mágico con una visión crítica de la realidad social y política de su país.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Carlos_Fuentes_1987.jpg/1200px-Carlos_Fuentes_1987.jpg"
+  },
+  {
+    "IdAutor": "36a263f0-8ab9-4660-8767-a5fe8dec2ff1",
+    "NombreAutor": "J.R.R. Tolkien",
+    "Bibliografia": "J.R.R. Tolkien, un autor británico y profesor universitario, es famoso por su obra de fantasía épica, 'El señor de los anillos'. Tolkien creó un universo detallado y complejo, explorando temas de heroísmo, la lucha entre el bien y el mal, y la amistad. Su habilidad para construir mundos imaginarios y desarrollar lenguajes ficticios ha dejado una marca duradera en el género de la fantasía.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/d/d4/J._R._R._Tolkien%2C_ca._1925.jpg"
+  },
+  {
+    "IdAutor": "58ec549c-0e3b-4c1e-831b-fc631c755b17",
+    "NombreAutor": "J.K. Rowling",
+    "Bibliografia": "J.K. Rowling es una autora británica conocida por la serie 'Harry Potter', que ha cautivado a lectores de todas las edades en todo el mundo. La saga explora el mundo de la magia y la lucha entre el bien y el mal a través de las aventuras del joven mago Harry Potter. Rowling ha creado un universo literario expansivo que ha tenido un impacto significativo en la literatura juvenil y la cultura popular.",
+    "UrlImg": "https://images-na.ssl-images-amazon.com/images/S/amzn-author-media-prod/8cigckin175jtpsk3gs361r4ss.jpg"
+  },
+  {
+    "IdAutor": "2de12c99-039e-40c1-88fe-33de325fa29e",
+    "NombreAutor": "Jane Austen",
+    "Bibliografia": "Jane Austen es una novelista inglesa conocida por sus agudas observaciones sociales y su enfoque en las relaciones y el matrimonio en la Inglaterra del siglo XIX. Obras como 'Orgullo y prejuicio' y 'Sentido y sensibilidad' exploran temas de amor, clase social y la posición de las mujeres en la sociedad. Austen es célebre por su estilo elegante y su habilidad para capturar las sutilezas de las dinámicas sociales y emocionales.",
+    "UrlImg": "https://cdn.britannica.com/12/172012-050-DAA7CE6B/Jane-Austen-Cassandra-engraving-portrait-1810.jpg"
+  },
+  {
+    "IdAutor": "76b7f4ce-cba4-407a-964a-f66f25059c22",
+    "NombreAutor": "Joana Marcús",
+    "Bibliografia": "Joana Marcus es una autora contemporánea que se ha destacado por su habilidad para explorar las complejidades de las relaciones humanas y los desafíos personales en sus novelas. Su obra más conocida, 'Después de diciembre', profundiza en el duelo, los secretos familiares y el proceso de sanación personal. Marcus combina una narrativa emotiva con una profunda comprensión de la psicología de sus personajes, ofreciendo a los lectores una experiencia literaria rica y reflexiva. A lo largo de su carrera, ha abordado diversos temas que resuenan con la experiencia humana moderna.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Joana_Marcús_2.jpg/1200px-Joana_Marcús_2.jpg"
+  },
+  {
+    "IdAutor": "40ab36a7-c282-4c32-a327-65cb2f25e135",
+    "NombreAutor": "Gustave Flaubert",
+    "Bibliografia": "Gustave Flaubert (1821-1880) fue un novelista francés considerado uno de los más grandes escritores del siglo XIX. Su obra más famosa, *Madame Bovary*, es una crítica incisiva de la vida burguesa en la Francia de su tiempo y se destaca por su estilo literario innovador y su enfoque detallado en la psicología de los personajes. Flaubert es conocido por su perfeccionismo en la escritura, buscando la palabra exacta y el estilo preciso, y por su influencia en el desarrollo del realismo literario. Además de *Madame Bovary*, su obra incluye *Salammbô*, *L'Éducation sentimentale* y *Bouvard et Pécuchet*.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Gustave_Flaubert_1860.jpg/800px-Gustave_Flaubert_1860.jpg"
+  },
+  {
+    "IdAutor": "87126dd0-c1f5-45eb-a2bc-2996e70dbc3d",
+    "NombreAutor": "Alexandre Dumas",
+    "Bibliografia": "Alexandre Dumas (1802-1870) fue un prolífico escritor francés, conocido por sus novelas de aventuras históricas. Entre sus obras más destacadas se encuentran *Los tres mosqueteros*, *El conde de Montecristo* y *La reina Margot*. Dumas es célebre por su habilidad para tejer tramas emocionantes y sus vibrantes personajes. Sus historias están marcadas por una rica mezcla de acción, romance y drama, que capturan la esencia del siglo XVII y XIX en Francia. Su obra ha tenido un impacto duradero en la literatura de aventuras y continúa siendo popular en adaptaciones cinematográficas y teatrales.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Alexandre_Dumas_p%C3%A8re.jpg/800px-Alexandre_Dumas_p%C3%A8re.jpg"
+  },
+  {
+    "IdAutor": "067e792e-c1b5-4388-86a7-daa273b3b752",
+    "NombreAutor": "Johann Wolfgang von Goethe",
+    "Bibliografia": "Johann Wolfgang von Goethe (1749-1832) fue un destacado escritor y poeta alemán, una de las figuras más importantes de la literatura alemana y europea. Su obra más conocida es *Fausto*, un drama que explora temas de ambición, redención y la naturaleza humana. Goethe también escribió poesía, novelas y obras de teatro, como *Los sufrimientos del joven Werther* y *Wilhelm Meister's Apprenticeship*. Su trabajo abarca una amplia gama de géneros y estilos, y su influencia se extiende a la literatura, la filosofía y las artes. Goethe fue una figura clave en el movimiento Sturm und Drang y el Romanticismo alemán.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Goethe_1.jpg/800px-Goethe_1.jpg"
+  },
+  {
+    "IdAutor": "916e61ab-199c-4923-88b6-bef51ae6ae02",
+    "NombreAutor": "James Joyce",
+    "Bibliografia": "James Joyce (1882-1941) fue un influyente escritor irlandés conocido por su innovador estilo narrativo y sus contribuciones a la literatura modernista. Su obra maestra, *Ulises*, es famosa por su estructura experimental y su técnica de monólogo interior. Joyce también es conocido por *Dublineses*, una colección de cuentos cortos que ofrece una visión profunda de la vida en Dublín, y *Retrato del artista adolescente*, una novela semi-autobiográfica que explora la formación del artista. Su enfoque en el flujo de conciencia y la subjetividad ha dejado una marca duradera en la literatura contemporánea.",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/James_Joyce_1915.jpg/800px-James_Joyce_1915.jpg"
   }
 ]
