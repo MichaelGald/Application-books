@@ -10,11 +10,11 @@ namespace Application_books.Database.Entitties
         [Column("id_usuario")]
         public Guid IdUsuario { get; set; }
 
-        [StringLength(50)]
+        [StringLength(100)]
         [Column("cliente")]
         public string NombreUsuario {  get; set; }
 
-        [StringLength(50)]
+        [StringLength(100)]
         [Column("email")]
         public string Email { get; set; }
 

@@ -1,62 +1,242 @@
 [
   {
-    "IdLibro": "2d2b9034-92a2-4089-982e-a6af9885d23f",
-    "Titulo": "El Gran Gatsby",
-    "Descripcion": "Una novela clásica de F. Scott Fitzgerald sobre la decadencia del sueño americano.",
-    "Genero": "Ficción",
-    "created_time": "1925-04-10T00:00:00",
-    "UrlImg": "https://static.cegal.es/imagenes/marcadas/9788419/978841965491.gif",
-    "UrlPdf": "https://example.com/great-gatsby.pdf",
-    "IdAutor": "62b0c3ea-2421-4a75-a3a1-737779e88766"
+    "IdLibro": "fa57782a-538f-4895-bfac-29880eaf61a9",
+    "Titulo": "El Resplandor",
+    "Descripcion": "Una novela de Stephen King que cuenta la historia de Jack Torrance, un aspirante a escritor que acepta un trabajo como cuidador de un hotel aislado en Colorado. A medida que el invierno avanza, la soledad y los espíritus que habitan el hotel comienzan a afectar la cordura de Jack, llevando a un desenlace aterrador. La novela explora temas como la locura, el aislamiento y la influencia del mal en la mente humana.",
+    "Genero": "Terror",
+    "created_time": "1977-01-28T00:00:00",
+    "UrlImg": "https://adriw.com/wp-content/uploads/2020/02/EL-RESPLANDOR-1.jpg",
+    "UrlPdf": "https://gualeguaychu.gov.ar/apps/dashboard/ftp/biblioteca/45/45.pdf",
+    "IdAutor": "ddabb376-9955-47fd-9d30-dba90947b314"
   },
   {
-    "IdLibro": "873d965a-ea5b-4f88-8981-92ee347399c9",
+    "IdLibro": "90bd1465-dd9a-443c-9e97-d65208d8778f",
+    "Titulo": "Cien años de soledad",
+    "Descripcion": "Una obra maestra del realismo mágico escrita por Gabriel García Márquez. La novela sigue la historia de la familia Buendía a lo largo de varias generaciones en el pueblo ficticio de Macondo. A través de sus páginas, el lector es transportado a un mundo donde lo fantástico se mezcla con lo cotidiano, explorando temas como el tiempo, la soledad, la violencia y el destino. 'Cien años de soledad' es considerada una de las obras más importantes de la literatura hispanoamericana.",
+    "Genero": "Realismo Mágico",
+    "created_time": "1967-05-30T00:00:00",
+    "UrlImg": "https://assets.lectulandia.com/b/Gabriel%20Garcia%20Marquez/Cien%20anos%20de%20soledad%20(2848)/big.jpg",
+    "UrlPdf": "https://www.sev.gob.mx/clasesdesdecasa/documentos/c8cf01c83fcd163f06e727cabcff90ac100-años-de-soledad-Gabriel-García-Marquez.pdf",
+    "IdAutor": "4ec3d0ab-ff5c-4de2-97c9-1fe3b409ab94"
+  },
+  {
+    "IdLibro": "7f192f7b-40c1-44b4-8f0e-56ed3157fc42",
     "Titulo": "1984",
-    "Descripcion": "Una novela distópica de George Orwell sobre un régimen totalitario.",
+    "Descripcion": "En '1984', George Orwell pinta un sombrío retrato de un futuro distópico donde un régimen totalitario, encabezado por el omnipresente Gran Hermano, controla cada aspecto de la vida de los ciudadanos. La novela sigue a Winston Smith, un hombre común que comienza a cuestionar el régimen y su propia existencia. A través de su lucha por encontrar la verdad, Orwell explora temas como la manipulación de la información, la vigilancia masiva y la opresión política.",
     "Genero": "Ciencia Ficción",
     "created_time": "1949-06-08T00:00:00",
-    "UrlImg": "https://static.cegal.es/imagenes/marcadas/9788419/978841965491.gif",
-    "UrlPdf": "https://example.com/1984.pdf",
-    "IdAutor": "62b0c3ea-2421-4a75-a3a1-737779e88766"
+    "UrlImg": "https://img.perlego.com/book-covers/2663769/9782291963134.jpg",
+    "UrlPdf": "https://www.cjpb.org.uy/wp-content/uploads/repositorio/serviciosAlAfiliado/librosDigitales/Orwell-1984.pdf",
+    "IdAutor": "4ec3d0ab-ff5c-4de2-97c9-1fe3b409ab94"
   },
   {
-    "IdLibro": "fdda9c36-d86b-441c-849c-4a517f5fc472",
-    "Titulo": "El misterio del bosque",
-    "Descripcion": "Una novela de suspense y misterio escrita por Ana García.",
-    "Genero": "Suspense",
-    "created_time": "2010-03-15T00:00:00",
-    "UrlImg": "https://static.cegal.es/imagenes/marcadas/9788419/978841965491.gif",
-    "UrlPdf": "https://example.com/elmisteriodelbosque.pdf",
-    "IdAutor": "50cabc16-efc0-41e7-8cb9-e480c824d12d"
+    "IdLibro": "1f7a61f1-a8d3-491a-891c-0bc8cabebb73",
+    "Titulo": "El amor en los tiempos del cólera",
+    "Descripcion": "Gabriel García Márquez narra una historia de amor que trasciende el tiempo y las circunstancias. La novela sigue la vida de Florentino Ariza y Fermina Daza, dos personas que, a pesar de las adversidades y la distancia, mantienen un amor que perdura a lo largo de los años. A través de una prosa rica y poética, García Márquez explora los temas del amor, la pasión, la vejez y la inevitabilidad del tiempo.",
+    "Genero": "Romance",
+    "created_time": "1985-09-05T00:00:00",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/e/e9/El_amor_en_los_tiempos_del_cólera.png",
+    "UrlPdf": "https://web.seducoahuila.gob.mx/biblioweb/upload/García%20Gabriel%20-%20El%20amor%20en.pdf",
+    "IdAutor": "ea9ad9a4-71f9-48b2-a026-1cb823fcd7ae"
   },
   {
-    "IdLibro": "d8799f74-634e-4d96-9bb4-bd06c704486c",
-    "Titulo": "La sombra del pasado",
-    "Descripcion": "Una obra histórica sobre la Segunda Guerra Mundial por Luis Martínez.",
-    "Genero": "Historia",
-    "created_time": "2005-07-22T00:00:00",
-    "UrlImg": "https://static.cegal.es/imagenes/marcadas/9788419/978841965491.gif",
-    "UrlPdf": "https://example.com/lasombradelpasado.pdf",
-    "IdAutor": "50cabc16-efc0-41e7-8cb9-e480c824d12d"
-  },
-  {
-    "IdLibro": "19e23a64-25c2-46d4-b82e-edf272b722c6",
-    "Titulo": "Cuentos de la luna",
-    "Descripcion": "Una colección de cuentos infantiles por Marta Rodríguez.",
-    "Genero": "Infantil",
-    "created_time": "2018-11-11T00:00:00",
-    "UrlImg": "https://static.cegal.es/imagenes/marcadas/9788419/978841965491.gif",
-    "UrlPdf": "https://example.com/cuentosdelaluna.pdf",
-    "IdAutor": "8c0754b6-d7b2-40e8-9cf3-f8fabbccd4f7"
-  },
-  {
-    "IdLibro": "395a08b9-a2da-4178-8d26-86c42e432dec",
-    "Titulo": "El enigma de los sueños",
-    "Descripcion": "Una novela de ciencia ficción sobre viajes en el tiempo por Carlos López.",
+    "IdLibro": "490dd263-8170-4553-86c2-3227f99e2ff2",
+    "Titulo": "Fahrenheit 451",
+    "Descripcion": "Ray Bradbury imagina un futuro donde los libros están prohibidos y los bomberos se encargan de quemarlos. La novela sigue a Guy Montag, un bombero que comienza a cuestionar su papel en la sociedad y la importancia de los libros. A medida que su conciencia se despierta, Montag se enfrenta a un mundo opresivo que busca controlar el pensamiento y la creatividad. 'Fahrenheit 451' es una poderosa alegoría sobre la censura, la libertad de expresión y el poder de las ideas.",
     "Genero": "Ciencia Ficción",
-    "created_time": "2021-05-05T00:00:00",
-    "UrlImg": "https://static.cegal.es/imagenes/marcadas/9788419/978841965491.gif",
-    "UrlPdf": "https://example.com/elenigmadelossuenos.pdf",
-    "IdAutor": "8c0754b6-d7b2-40e8-9cf3-f8fabbccd4f7"
+    "created_time": "1953-10-19T00:00:00",
+    "UrlImg": "https://img.perlego.com/book-covers/779391/9781439142677.jpg",
+    "UrlPdf": "https://jghsenglish.edublogs.org/files/2015/02/Fahrenheit-451.pdf",
+    "IdAutor": "522de99c-cd09-4661-8467-89bda7d520c7"
+  },
+  {
+    "IdLibro": "8d98909b-67d4-430b-a7f3-c1ec229a7e62",
+    "Titulo": "La casa de los espíritus",
+    "Descripcion": "Isabel Allende narra la historia de la familia Trueba a lo largo de varias generaciones, combinando realismo mágico con la cruda realidad política de Chile. La novela explora temas como la opresión, la violencia y la resistencia a través de los personajes femeninos que luchan por preservar sus raíces y sus creencias en un mundo en constante cambio. 'La casa de los espíritus' es una obra que entrelaza lo sobrenatural con lo histórico, creando una narrativa rica y emotiva.",
+    "Genero": "Realismo Mágico",
+    "created_time": "1982-01-01T00:00:00",
+    "UrlImg": "https://images.cdn2.buscalibre.com/fit-in/360x360/be/0e/be0e75ce4601181576d21aa91386cbba.jpg",
+    "UrlPdf": "https://www.suneo.mx/literatura/subidas/Isabel%20Allende%20La%20Casa%20de%20los%20Espíritus.pdf",
+    "IdAutor": "2de12c99-039e-40c1-88fe-33de325fa29e"
+  },
+  {
+    "IdLibro": "e66d0132-0470-48c0-8cf7-b01bda943966",
+    "Titulo": "Crimen y castigo",
+    "Descripcion": "Fiódor Dostoyevski relata la angustia y el tormento de Raskólnikov, un joven estudiante que decide asesinar a una vieja usurera para probar su teoría de que algunas personas tienen el derecho de cometer crímenes si es por un bien mayor. A lo largo de la novela, el protagonista lucha con la culpa y la paranoia, cuestionando la moralidad de sus acciones y enfrentándose a las consecuencias psicológicas de su crimen.",
+    "Genero": "Filosofía",
+    "created_time": "1866-11-01T00:00:00",
+    "UrlImg": "https://img.perlego.com/book-covers/2787451/9788418211355.jpg",
+    "UrlPdf": "https://www.suneo.mx/literatura/subidas/Fiodor%20Dostoyevski%20Crimen%20y%20castigo.pdf",
+    "IdAutor": "76b7f4ce-cba4-407a-964a-f66f25059c22"
+  },
+  {
+    "IdLibro": "5b0381c2-2719-4d60-b470-444a4b05fd1c",
+    "Titulo": "Orgullo y prejuicio",
+    "Descripcion": "Jane Austen ofrece una visión crítica de la sociedad inglesa del siglo XIX a través de la historia de Elizabeth Bennet y Mr. Darcy. La novela explora temas como el matrimonio, la clase social y el amor, mientras los personajes luchan por superar sus propios prejuicios y orgullos. 'Orgullo y prejuicio' es una obra que combina romance y comedia con una aguda observación de las normas sociales de su tiempo.",
+    "Genero": "Romance",
+    "created_time": "1813-01-28T00:00:00",
+    "UrlImg": "https://i.pinimg.com/originals/2e/f9/91/2ef991edd4d4039895031544ed0c561a.png",
+    "UrlPdf": "https://www.imprentanacional.go.cr/editorialdigital/libros/literatura%20universal/orgullo_y_prejuicio_edincr.pdf",
+    "IdAutor": "6e186857-5951-4082-9db2-d2acbdd8e505"
+  },
+  {
+    "IdLibro": "84c98d04-0d37-4c94-9e7c-1a70a12e9a5e",
+    "Titulo": "Moby Dick",
+    "Descripcion": "Herman Melville narra la obsesión del capitán Ahab por capturar a la gran ballena blanca, Moby Dick. La novela es tanto una aventura épica como una profunda exploración de temas filosóficos y existenciales, como la naturaleza del mal, la venganza y la lucha entre el hombre y la naturaleza. A través de su narrador, Ishmael, el lector se sumerge en un mundo de peligro, misterio y reflexión.",
+    "Genero": "Aventura",
+    "created_time": "1851-10-18T00:00:00",
+    "UrlImg": "https://m.media-amazon.com/images/I/615gYAMDHQL.AC_UF894,1000_QL80.jpg",
+    "UrlPdf": "https://cdn.pruebat.org/recursos/recursos/libros/pdf/Moby-Dick.pdf",
+    "IdAutor": "e6054c7b-526c-4dde-a0a6-80eed3fccade"
+  },
+  {
+    "IdLibro": "7d8015ee-3b2e-4748-a106-a14c396f9d4f",
+    "Titulo": "El retrato de Dorian Gray",
+    "Descripcion": "Oscar Wilde presenta una fascinante exploración del hedonismo, la belleza y la moralidad a través de la historia de Dorian Gray, un joven cuya apariencia permanece inmutable mientras su retrato envejece en su lugar. A medida que Dorian se sumerge en una vida de placeres y excesos, su alma se corrompe, reflejándose en el retrato. La novela plantea preguntas sobre la naturaleza del alma, el arte y las consecuencias de vivir sin restricciones morales.",
+    "Genero": "Filosofía",
+    "created_time": "1890-06-20T00:00:00",
+    "UrlImg": "https://images.cdn2.buscalibre.com/fit-in/360x360/91/18/9118645bef1e527a3e1f14e7187ac89e.jpg",
+    "UrlPdf": "https://biblioteca.munimollendo.gob.pe/wp-content/uploads/2020/10/El-retrato-de-Dorian-Gray-ilustrado.pdf",
+    "IdAutor": "e6054c7b-526c-4dde-a0a6-80eed3fccade"
+  },
+  {
+    "IdLibro": "7903dac4-a2f0-4dc0-8cad-20c70c83b335",
+    "Titulo": "Don Quijote de la Mancha",
+    "Descripcion": "Miguel de Cervantes narra las aventuras de un hidalgo español, Alonso Quijano, que pierde la cordura y decide convertirse en caballero andante bajo el nombre de Don Quijote. Junto a su fiel escudero, Sancho Panza, recorre la Mancha en busca de aventuras, enfrentándose a molinos de viento que confunde con gigantes. La novela es una sátira de los libros de caballerías y una profunda reflexión sobre la realidad y la locura.",
+    "Genero": "Aventura",
+    "created_time": "1605-01-16T00:00:00",
+    "UrlImg": "https://images-na.ssl-images-amazon.com/images/I/61HOpyVqSeL.jpg",
+    "UrlPdf": "https://cvc.cervantes.es/literatura/lee/coleccion/pdf/quijote.pdf",
+    "IdAutor": "e6054c7b-526c-4dde-a0a6-80eed3fccade"
+  },
+  {
+    "IdLibro": "3a3f7b04-f6ee-4060-9bc9-50812bce13b4",
+    "Titulo": "La metamorfosis",
+    "Descripcion": "Franz Kafka relata la historia de Gregor Samsa, un hombre que un día se despierta transformado en un gigantesco insecto. A través de esta surrealista transformación, Kafka explora temas como la alienación, la culpa y la impotencia. La novela corta es una obra maestra de la literatura moderna, que sigue siendo interpretada y analizada desde múltiples perspectivas filosóficas y psicológicas.",
+    "Genero": "Filosofía",
+    "created_time": "1915-10-14T00:00:00",
+    "UrlImg": "https://www.udllibros.com/imagenes/9788496/978849681502.JPG",
+    "UrlPdf": "https://campuseducativo.santafe.edu.ar/wp-content/uploads/adjuntos/recursos/20190321/campus_20190321111350phpzQBvmh.pdf",
+    "IdAutor": "76b7f4ce-cba4-407a-964a-f66f25059c22"
+  },
+  {
+    "IdLibro": "d438f73a-8b30-4311-8cd8-9d05ee8ff8a5",
+    "Titulo": "Las uvas de la ira",
+    "Descripcion": "John Steinbeck retrata la vida de una familia de agricultores desplazada por la Gran Depresión en Estados Unidos. La novela sigue a los Joad en su lucha por sobrevivir mientras migran al oeste en busca de trabajo y dignidad. A través de su prosa evocadora, Steinbeck aborda temas como la injusticia social, la pobreza y la resistencia humana. 'Las uvas de la ira' es una obra profundamente conmovedora y crítica de la desigualdad.",
+    "Genero": "Ficción",
+    "created_time": "1939-04-14T00:00:00",
+    "UrlImg": "https://www.alianzaeditorial.es/imagenes/libros/grande/9788491813590-las-uvas-de-la-ira.jpg",
+    "UrlPdf": "https://www.suneo.mx/literatura/subidas/John%20Steinbeck%20Las%20Uvas%20de%20la%20Ira.pdf",
+    "IdAutor": "76b7f4ce-cba4-407a-964a-f66f25059c22"
+  },
+  {
+    "IdLibro": "ef40bdac-4229-4426-bd76-44d143ecaf95",
+    "Titulo": "El Gran Gatsby",
+    "Descripcion": "F. Scott Fitzgerald ofrece una visión crítica de la sociedad estadounidense durante los años 20, una época conocida como la Era del Jazz. La novela sigue la vida de Jay Gatsby, un millonario enigmático que organiza fiestas extravagantes con la esperanza de reencontrarse con su amor perdido, Daisy Buchanan. A través de la historia de Gatsby, Fitzgerald explora temas como la decadencia moral, la obsesión por el dinero y el sueño americano.",
+    "Genero": "Ficción",
+    "created_time": "1925-04-10T00:00:00",
+    "UrlImg": "https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg",
+    "UrlPdf": "https://web.seducoahuila.gob.mx/biblioweb/upload/el_gran_gatsby.pdf",
+    "IdAutor": "76b7f4ce-cba4-407a-964a-f66f25059c22"
+  },
+  {
+    "IdLibro": "52ce8f05-4bd4-449f-91d6-066f5b96c6ca",
+    "Titulo": "El nombre de la rosa",
+    "Descripcion": "Umberto Eco combina la narrativa detectivesca con una profunda exploración filosófica y teológica en esta novela ambientada en un monasterio benedictino durante la Edad Media. El protagonista, Guillermo de Baskerville, debe resolver una serie de asesinatos que ocurren en la abadía, mientras se enfrenta a intrigas religiosas y políticas. 'El nombre de la rosa' es tanto un thriller intelectual como una reflexión sobre el poder del conocimiento y la interpretación de la verdad.",
+    "Genero": "Misterio",
+    "created_time": "1980-10-01T00:00:00",
+    "UrlImg": "https://m.media-amazon.com/images/I/816Z+coEZ8L.AC_UF894,1000_QL80.jpg",
+    "UrlPdf": "https://www.suneo.mx/literatura/subidas/Umberto%20Eco%20El%20Nombre%20de%20la%20Rosa.pdf",
+    "IdAutor": "76b7f4ce-cba4-407a-964a-f66f25059c22"
+  },
+  {
+    "IdLibro": "653940c8-f990-4d5d-b1c8-55e447b64bc0",
+    "Titulo": "La Odisea",
+    "Descripcion": "Homero narra las aventuras de Odiseo (Ulises) en su largo viaje de regreso a Ítaca tras la Guerra de Troya. A lo largo de su viaje, se enfrenta a dioses, monstruos y otros desafíos que ponen a prueba su ingenio y valor. 'La Odisea' es una de las epopeyas más importantes de la literatura occidental, explorando temas como la lealtad, el heroísmo y el destino.",
+    "Genero": "Épica",
+    "created_time": "-800-01-01T00:00:00",
+    "UrlImg": "https://www.normainfantilyjuvenil.com/ar/uploads/2019/05/9789501323368.jpg",
+    "UrlPdf": "https://www.mendoza.edu.ar/wp-content/uploads/2020/04/La-Odisea-de-Homero.pdf",
+    "IdAutor": "76b7f4ce-cba4-407a-964a-f66f25059c22"
+  },
+  {
+    "IdLibro": "b4e3996d-ca4c-434a-b02e-ecb40f8af47f",
+    "Titulo": "Los hermanos Karamazov",
+    "Descripcion": "Fiódor Dostoyevski presenta una compleja narrativa que explora los conflictos morales, espirituales y filosóficos a través de la historia de la familia Karamazov. Los tres hermanos representan diferentes aspectos de la naturaleza humana, y su relación con su padre, un hombre disoluto y egoísta, desencadena una serie de eventos trágicos. La novela es una profunda reflexión sobre la fe, el libre albedrío y la redención.",
+    "Genero": "Filosofía",
+    "created_time": "1880-11-01T00:00:00",
+    "UrlImg": "https://www.alcanalibros.com/690785.jpg",
+    "UrlPdf": "https://cdn.pruebat.org/recursos/recursos/libros/pdf/Los-hermanos-karamazov.pdf",
+    "IdAutor": "3d3f676a-c1e7-4166-a058-87ad83b94b54"
+  },
+  {
+    "IdLibro": "db90c087-1ab2-4c50-986c-8fc6d4dacb0c",
+    "Titulo": "El principito",
+    "Descripcion": "Antoine de Saint-Exupéry narra la historia de un pequeño príncipe que viaja de un planeta a otro, encontrándose con personajes que encarnan diferentes aspectos de la naturaleza humana. A través de su viaje, el principito reflexiona sobre temas como la amistad, el amor y la pérdida. La obra, aunque aparentemente dirigida a un público infantil, es una profunda alegoría filosófica que sigue siendo apreciada por lectores de todas las edades.",
+    "Genero": "Filosofía",
+    "created_time": "1943-04-06T00:00:00",
+    "UrlImg": "https://i.pinimg.com/originals/44/49/fa/4449fa8105c957a2cea0f41fd3b60d5c.jpg",
+    "UrlPdf": "https://web.seducoahuila.gob.mx/biblioweb/upload/el%20principito.pdf",
+    "IdAutor": "3d3f676a-c1e7-4166-a058-87ad83b94b54"
+  },
+  {
+    "IdLibro": "1de51625-2fd1-4560-8f31-d3fc81de07fc",
+    "Titulo": "El señor de los anillos: La comunidad del anillo",
+    "Descripcion": "J.R.R. Tolkien da inicio a una épica aventura en la Tierra Media con la historia de Frodo Bolsón, un hobbit que se ve arrastrado a una misión peligrosa para destruir el Anillo Único. Acompañado por un grupo heterogéneo, Frodo debe enfrentarse a fuerzas oscuras y desafíos insuperables mientras intenta salvar su mundo del dominio de Sauron. 'La comunidad del anillo' es la primera parte de una trilogía que ha dejado una profunda huella en la literatura de fantasía.",
+    "Genero": "Fantasía",
+    "created_time": "1954-07-29T00:00:00",
+    "UrlImg": "https://images.cdn3.buscalibre.com/fit-in/360x360/54/49/5449ba87a3e457a22dd6d0972b5c261e.jpg",
+    "UrlPdf": "https://web.seducoahuila.gob.mx/biblioweb/upload/J.R.R.%20Tolkien%20La%20Comunidad%20del%20anillo%20I.pdff",
+    "IdAutor": "3d3f676a-c1e7-4166-a058-87ad83b94b54"
+  },
+  {
+    "IdLibro": "d27d2cb7-84f3-45c1-af98-4aea120e8df9",
+    "Titulo": "Ulises",
+    "Descripcion": "James Joyce revoluciona la literatura moderna con su relato del día en la vida de Leopold Bloom, un hombre común de Dublín. A través de una prosa experimental y un uso innovador del monólogo interior, Joyce explora la mente humana en su complejidad, mientras rinde homenaje a 'La Odisea' de Homero. 'Ulises' es una obra desafiante que ha influido profundamente en la literatura del siglo XX.",
+    "Genero": "Ficción",
+    "created_time": "1922-02-02T00:00:00",
+    "UrlImg": "https://images.cdn3.buscalibre.com/fit-in/360x360/4c/4f/4c4fc4695ca447acd3450f0e52b0a7b5.jpg",
+    "UrlPdf": "https://web.seducoahuila.gob.mx/biblioweb/upload/ulises.pdf",
+    "IdAutor": "3d3f676a-c1e7-4166-a058-87ad83b94b54"
+  },
+  {
+    "IdLibro": "943bdebc-245f-4400-ae6a-f6d585d192a1",
+    "Titulo": "Fausto",
+    "Descripcion": "Johann Wolfgang von Goethe cuenta la historia del doctor Fausto, un erudito insatisfecho que hace un pacto con el diablo, Mefistófeles, a cambio de conocimiento y placer. La obra es una exploración de la ambición humana, la búsqueda de la realización y las consecuencias de ceder a la tentación. 'Fausto' es una de las tragedias más grandes de la literatura occidental, y ha sido fuente de inspiración para innumerables obras de arte y literatura.",
+    "Genero": "Filosofía",
+    "created_time": "1808-08-16T00:00:00",
+    "UrlImg": "https://images.cdn1.buscalibre.com/fit-in/360x360/b9/0b/b90bb19d52d52eb9c8ba8b53d14fd095.jpg",
+    "UrlPdf": "https://www.ucm.es/data/cont/docs/119-2014-02-13-Goethe.Fausto.pdf",
+    "IdAutor": "3d3f676a-c1e7-4166-a058-87ad83b94b54"
+  },
+  {
+    "IdLibro": "dd7d9bb1-e9bc-4ab0-a7d5-c6d446f48da4",
+    "Titulo": "El conde de Montecristo",
+    "Descripcion": "Alexandre Dumas narra la historia de Edmundo Dantés, un hombre injustamente encarcelado que escapa de prisión y se embarca en una misión de venganza contra quienes lo traicionaron. Con la ayuda de un tesoro oculto, Dantés asume el nombre de Conde de Montecristo y orquesta su venganza con precisión calculada. 'El conde de Montecristo' es una emocionante novela de aventura y una reflexión sobre la justicia, la venganza y el perdón.",
+    "Genero": "Aventura",
+    "created_time": "1844-08-28T00:00:00",
+    "UrlImg": "https://www.tematika.com/media/catalog/Ilhsa/Imagenes/572807.jpg",
+    "UrlPdf": "https://www.imprentanacional.go.cr/editorialdigital/libros/literatura%20universal/el_conde_de_montecristo_edincr.pdf",
+    "IdAutor": "3d3f676a-c1e7-4166-a058-87ad83b94b54"
+  },
+  {
+    "IdLibro": "dbf76e2e-eace-4ff2-9800-37392bc1d55b",
+    "Titulo": "Madame Bovary",
+    "Descripcion": "Gustave Flaubert relata la historia de Emma Bovary, una mujer atrapada en un matrimonio aburrido que busca escapar de su vida provinciana a través de relaciones extramaritales y el lujo. La novela es una crítica mordaz de la burguesía francesa y una exploración de los peligros de la insatisfacción personal y las ilusiones románticas. 'Madame Bovary' es una obra maestra del realismo literario.",
+    "Genero": "Ficción",
+    "created_time": "1857-12-12T00:00:00",
+    "UrlImg": "https://clubesdelectura.castillalamancha.es/sites/clubsdelectura.castillalamancha.es/files/portada-bovary.jpg",
+    "UrlPdf": "https://www.argentina.gob.ar/sites/default/files/madame_bovary_flaubert.pdf",
+    "IdAutor": "3d3f676a-c1e7-4166-a058-87ad83b94b54"
+  },
+  {
+    "IdLibro": "bfb4e115-0984-4c77-ba0a-e746a0cca855",
+    "Titulo": "Después De Diciembre",
+    "Descripcion": "Después de diciembre es una novela de Joana Marcus que explora las complejidades de las relaciones humanas y los desafíos personales en un entorno contemporáneo. La historia sigue a Valeria, una mujer que, tras la pérdida de su madre en diciembre, se enfrenta a un año lleno de cambios y decisiones cruciales. A medida que navega por su duelo, Valeria descubre viejos secretos familiares, enfrenta dilemas morales y busca su propio camino hacia la sanación y el autoconocimiento.",
+    "Genero": "Romance",
+    "created_time": "2022-05-15T00:00:00",
+    "UrlImg": "https://m.media-amazon.com/images/I/71te+JAGpnL.AC_UF1000,1000_QL80.jpg",
+    "UrlPdf": "https://ia801204.us.archive.org/31/items/67555555555555555555555/Despues_de_diciembre_Joana_Marcus.pdf",
+    "IdAutor": "bf5419bc-e165-4025-a227-b0be835f8c78"
   }
 ]

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Application_books.Migrations
 {
     [DbContext(typeof(ApplicationbooksContext))]
-    [Migration("20240817214223_usurio")]
-    partial class usurio
+    [Migration("20240818075509_iniciar-1")]
+    partial class iniciar1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,8 +33,8 @@ namespace Application_books.Migrations
                         .HasColumnName("id_autor");
 
                     b.Property<string>("Bibliografia")
-                        .HasMaxLength(300)
-                        .HasColumnType("nvarchar(300)")
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)")
                         .HasColumnName("bibliografia");
 
                     b.Property<string>("NombreAutor")
@@ -45,8 +45,8 @@ namespace Application_books.Migrations
 
                     b.Property<string>("UrlImg")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)")
                         .HasColumnName("img_autor");
 
                     b.HasKey("IdAutor");
@@ -124,8 +124,8 @@ namespace Application_books.Migrations
 
                     b.Property<string>("Descripcion")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)")
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)")
                         .HasColumnName("descripcion");
 
                     b.Property<DateTime>("FechaCreacion")
@@ -135,8 +135,8 @@ namespace Application_books.Migrations
 
                     b.Property<string>("Genero")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
                         .HasColumnName("genero");
 
                     b.Property<Guid>("IdAutor")
@@ -151,8 +151,8 @@ namespace Application_books.Migrations
 
                     b.Property<string>("UrlImg")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)")
                         .HasColumnName("img_libro");
 
                     b.Property<string>("UrlPdf")
@@ -234,13 +234,13 @@ namespace Application_books.Migrations
                         .HasColumnName("id_usuario");
 
                     b.Property<string>("Email")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
                         .HasColumnName("email");
 
                     b.Property<string>("NombreUsuario")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
                         .HasColumnName("cliente");
 
                     b.Property<string>("Password")

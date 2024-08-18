@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Application_books.Migrations
 {
     /// <inheritdoc />
-    public partial class AuthService : Migration
+    public partial class iniciar1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,8 +21,8 @@ namespace Application_books.Migrations
                 {
                     id_autor = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     autor = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    bibliografia = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: true),
-                    img_autor = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false)
+                    bibliografia = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: true),
+                    img_autor = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -35,8 +35,8 @@ namespace Application_books.Migrations
                 columns: table => new
                 {
                     id_usuario = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    cliente = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
-                    email = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
+                    cliente = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
                     password = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true)
                 },
                 constraints: table =>
@@ -51,10 +51,10 @@ namespace Application_books.Migrations
                 {
                     id_libro = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     titulo = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    descripcion = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    genero = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    descripcion = table.Column<string>(type: "nvarchar(2000)", maxLength: 2000, nullable: false),
+                    genero = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     created_time = table.Column<DateTime>(type: "datetime2", maxLength: 50, nullable: false),
-                    img_libro = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    img_libro = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
                     pdf_libro = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
                     id_autor = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
@@ -124,6 +124,35 @@ namespace Application_books.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Comentarios",
+                columns: table => new
+                {
+                    id_comentario = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    id_libro = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    id_usuario = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    comentario = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
+                    fecha = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Comentarios", x => x.id_comentario);
+                    table.ForeignKey(
+                        name: "FK_Comentarios_libros_book_id_libro",
+                        column: x => x.id_libro,
+                        principalSchema: "dbo",
+                        principalTable: "libros_book",
+                        principalColumn: "id_libro",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Comentarios_usuario_id_usuario",
+                        column: x => x.id_usuario,
+                        principalSchema: "dbo",
+                        principalTable: "usuario",
+                        principalColumn: "id_usuario",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "lista_favorito",
                 schema: "dbo",
                 columns: table => new
@@ -164,6 +193,16 @@ namespace Application_books.Migrations
                 column: "id_usuario");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Comentarios_id_libro",
+                table: "Comentarios",
+                column: "id_libro");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Comentarios_id_usuario",
+                table: "Comentarios",
+                column: "id_usuario");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_libros_book_id_autor",
                 schema: "dbo",
                 table: "libros_book",
@@ -194,6 +233,9 @@ namespace Application_books.Migrations
             migrationBuilder.DropTable(
                 name: "calificacion",
                 schema: "dbo");
+
+            migrationBuilder.DropTable(
+                name: "Comentarios");
 
             migrationBuilder.DropTable(
                 name: "lista_favorito",
