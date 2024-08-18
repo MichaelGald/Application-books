@@ -38,14 +38,17 @@ namespace Application_books.Services
         {
             var comentarioEntity = await _context.Comentarios
             .Where(c => c.IdLibro == id)
+            .Include(c => c.Usuario)
             .ToListAsync();
+
+
             if (comentarioEntity == null)
             {
                 return new ResponseDto<List<ComentarioDto>>
                 {
                     StatusCode = 404,
                     Status = false,
-                    Message = "No se encontro registro."
+                    Message = "No se encontró registro."
                 };
             }
             var comentarioDto = _mapper.Map < List<ComentarioDto>>(comentarioEntity);
