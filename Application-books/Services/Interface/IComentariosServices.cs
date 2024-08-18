@@ -8,7 +8,7 @@ namespace Application_books.Services.Interface
         Task<ResponseDto<ComentarioDto>> CreateAsync(ComentarioCreateDto dto);
         Task<ResponseDto<ComentarioDto>> DeleteAsync(Guid id);
         Task<ResponseDto<ComentarioDto>> EditAsync(ComentarioEditDto dto, Guid id);
-        Task<ResponseDto<ComentarioDto>> GetComentarioByAsync(Guid id);
+        Task<ResponseDto<List<ComentarioDto>>> GetComentarioByAsync(Guid id);
         Task<ResponseDto<List<ComentarioDto>>> GetComentarioListAsync();
     }
 }

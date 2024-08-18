@@ -65,7 +65,7 @@ namespace Application_books.Helpers
 
         private void MapsForComentario()
         {
-            CreateMap<ComentarioEntity, ComentarioDto>();
+            CreateMap<ComentarioEntity, ComentarioDto>().ForMember(dest => dest.NombreUsuario, opt => opt.MapFrom(src => src.Usuario.NombreUsuario));
             CreateMap<ComentarioCreateDto, ComentarioEntity>();
             CreateMap<ComentarioEditDto, ComentarioEntity>();
         }
