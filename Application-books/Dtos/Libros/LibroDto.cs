@@ -1,4 +1,5 @@
 ﻿using Application_books.Database.Entitties;
+using Application_books.Dtos.Autor;
 using System.ComponentModel.DataAnnotations;
 
 namespace Application_books.Dtos.Libros
