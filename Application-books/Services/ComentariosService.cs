@@ -34,20 +34,22 @@ namespace Application_books.Services
                 Data = ComentariosDtos,
             };
         }
-        public async Task<ResponseDto<ComentarioDto>> GetComentarioByAsync(Guid id)
+        public async Task<ResponseDto<List<ComentarioDto>>> GetComentarioByAsync(Guid id)
         {
-            var comentarioEntity = await _context.Comentarios.FirstOrDefaultAsync(c => c.IdComentario == id);
+            var comentarioEntity = await _context.Comentarios
+            .Where(c => c.IdLibro == id)
+            .ToListAsync();
             if (comentarioEntity == null)
             {
-                return new ResponseDto<ComentarioDto>
+                return new ResponseDto<List<ComentarioDto>>
                 {
                     StatusCode = 404,
                     Status = false,
                     Message = "No se encontro registro."
                 };
             }
-            var comentarioDto = _mapper.Map<ComentarioDto>(comentarioEntity);
-            return new ResponseDto<ComentarioDto>
+            var comentarioDto = _mapper.Map < List<ComentarioDto>>(comentarioEntity);
+            return new ResponseDto<List<ComentarioDto>>
             {
                 StatusCode = 200,
                 Status = true,
