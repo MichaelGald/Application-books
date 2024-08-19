@@ -1,16 +1,11 @@
 meta {
   name: Get All
   type: http
-  seq: 6
+  seq: 3
 }
 
 get {
-  url: {{PATH}}libros/?searchTeam&page=1
+  url: {{PATH}}libros/destacados
   body: none
   auth: none
-}
-
-query {
-  searchTeam: 
-  page: 1
 }
