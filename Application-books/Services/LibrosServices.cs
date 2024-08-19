@@ -102,7 +102,7 @@ namespace Application_books.Services
 
         public async Task<ResponseDto<LibroDto>> GetLibroByAsync(Guid id)
         {
-            var librosEntity = await _booksContext.Libros.FirstOrDefaultAsync(c => c.IdLibro == id);
+            var librosEntity = await _booksContext.Libros.Include(x => x.Calificaciones).FirstOrDefaultAsync(c => c.IdLibro == id);
             if (librosEntity == null)
             {
                 return new ResponseDto<LibroDto> 
