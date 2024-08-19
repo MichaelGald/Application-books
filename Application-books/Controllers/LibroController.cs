@@ -29,7 +29,14 @@ namespace Application_books.Controllers
                 response.Data,
             });
         }
-       
+
+        [HttpGet("destacados")]
+        public async Task<ActionResult<ResponseDto<List<LibroDto>>>> GetAll() 
+        {
+                var response = await _librosServices.GetLibroListDestacadosAsync();
+                return StatusCode(response.StatusCode, response);
+        }
+
         [HttpGet("{id}")]
         public async Task<ActionResult<ResponseDto<LibroDto>>> Get(Guid id)
         {

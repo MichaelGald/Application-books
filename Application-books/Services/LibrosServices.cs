@@ -1,7 +1,9 @@
 ﻿using Application_books.Database;
 using Application_books.Database.Entitties;
+using Application_books.Dtos.Autor;
 using Application_books.Dtos.Common;
 using Application_books.Dtos.Libros;
+using Application_books.Dtos.ListaFavoritos;
 using Application_books.Services.Interface;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
@@ -63,6 +65,20 @@ namespace Application_books.Services
                     HasPreviousPage = page > 1,
                     HasNextPage = page < totalPages,
                 }
+            };
+        }
+
+        public async Task<ResponseDto<List<LibroDto>>> GetLibroListDestacadosAsync()
+        {
+            var librosEntity = await _booksContext.Libros.ToListAsync();
+            var librosDto = _mapper.Map<List<LibroDto>>(librosEntity);
+
+            return new ResponseDto<List<LibroDto>>
+            {
+                StatusCode = 200,
+                Status = true,
+                Message = "Lista de Favoritos obtenida correctamente.",
+                Data = librosDto,
             };
         }
 
