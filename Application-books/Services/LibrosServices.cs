@@ -70,17 +70,34 @@ namespace Application_books.Services
 
         public async Task<ResponseDto<List<LibroDto>>> GetLibroListDestacadosAsync()
         {
-            var librosEntity = await _booksContext.Libros.ToListAsync();
-            var librosDto = _mapper.Map<List<LibroDto>>(librosEntity);
+            var libroEntityQuery = _booksContext.Libros
+                .Include(x => x.Calificaciones)
+                .Where(x => x.FechaCreacion <= DateTime.Now);
+
+            var librosConPromedio = await libroEntityQuery
+                .Select(libro => new
+                {
+                    Libro = libro,
+                    PromedioCalificaciones = libro.Calificaciones.Any()
+                        ? libro.Calificaciones.Average(c => c.Puntuacion)
+                        : 0.0
+                })
+                .OrderByDescending(x => x.PromedioCalificaciones)
+                .ToListAsync();
+
+            var librosEntity = librosConPromedio.Select(x => x.Libro).ToList();
+
+            var librosDtos = _mapper.Map<List<LibroDto>>(librosEntity);
 
             return new ResponseDto<List<LibroDto>>
             {
                 StatusCode = 200,
                 Status = true,
-                Message = "Lista de Favoritos obtenida correctamente.",
-                Data = librosDto,
+                Message = "Lista de libros obtenida correctamente.",
+                Data = librosDtos
             };
         }
+
 
 
         public async Task<ResponseDto<LibroDto>> GetLibroByAsync(Guid id)

@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Application-books")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abff73b82a3febbd882629d4d6c46e3f53f3907e")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd3c932c7d41216fbce05406f8bd2ecc447a34c8")]
+>>>>>>> 844cab4695667e29c2a5cb935f381555eb2d3829
 [assembly: System.Reflection.AssemblyProductAttribute("Application-books")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Application-books")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
